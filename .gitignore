@@ -4,6 +4,9 @@
 /AIRport/**
 /AIRway/**
 
+.DS_Store
+**/.DS_Store
+
 npm-debug.log
 
 # Ignore Rush temporary files
