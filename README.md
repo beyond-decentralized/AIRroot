@@ -18,4 +18,7 @@ All AIR projects share common libraries (mostly self defined) and it makes sense
 * AIRport
 * AIRWay
 
-3 run:  node buildAll.mjs
+3 run:  
+
+* npm i -g @microsoft/rush
+* node buildAll.mjs
