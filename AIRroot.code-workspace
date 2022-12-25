@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "AIRport",
+			"path": "./AIRport"
+		},
+		{
+			"name": "AIRline",
+			"path": "./AIRline"
+		},
+		{
+			"name": "AIRbridge",
+			"path": "./AIRbridge"
+		},
+		{
+			"name": "AIRway",
+			"path": "./AIRway"
+		}
+	],
+	"settings": {
+		"search.followSymlinks": false
+	}
+}
