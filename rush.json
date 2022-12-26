@@ -287,6 +287,11 @@
       "packageName": "@airline/topics",
       "projectFolder": "./AIRline/apps/topics",
       "shouldPublish": true
+    },
+    {
+      "packageName": "@airline/ui-angular",
+      "projectFolder": "./AIRline/UIs/angular",
+      "shouldPublish": true
     }
     /*
     {
