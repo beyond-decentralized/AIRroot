@@ -122,6 +122,7 @@ try {
     await buildPeerProjects(airbridgeBuild)
     await buildPeerProjects(airportSecondStageBuild)
     await buildPeerProjects(airwayBuild)
+    await buildPeerProjects(airportThirdStageBuild)
     await buildUI(airportReactUiBuild)
     await buildPeerProjects(airlineBuild)
 } catch (e) {
