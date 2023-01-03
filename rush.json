@@ -226,25 +226,45 @@
       "shouldPublish": true
     },
     // "./AIRport/UIs" folder (alphabetical order)
-    {
-      "packageName": "@airport/ui-react-components",
-      "projectFolder": "./AIRport/UI/react/components",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@airport/ui-react-main",
-      "projectFolder": "./AIRport/UI/react/main",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@airport/ui-svelte-main",
-      "projectFolder": "./AIRport/UI/svelte/main",
-      "shouldPublish": true
-    },
     // "AIRbridge" folder (external)
+    {
+      "packageName": "@airbridge/blockchain",
+      "projectFolder": "./AIRbridge/blockchain",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/data-model",
+      "projectFolder": "./AIRbridge/data-model",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/sso",
+      "projectFolder": "./AIRbridge/sso",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/transfer",
+      "projectFolder": "./AIRbridge/transfer",
+      "shouldPublish": true
+    },
     {
       "packageName": "@airbridge/validate",
       "projectFolder": "./AIRbridge/validate",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/ui-react-components",
+      "projectFolder": "./AIRbridge/UI/react/components",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/ui-react-main",
+      "projectFolder": "./AIRbridge/UI/react/main",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@airbridge/ui-svelte-main",
+      "projectFolder": "./AIRbridge/UI/svelte/main",
       "shouldPublish": true
     },
     // "AIRway" folder (external)

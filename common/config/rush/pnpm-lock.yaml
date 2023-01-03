@@ -34,10 +34,12 @@ dependencies:
   '@rush-temp/arrivals-n-departures': 'file:projects/arrivals-n-departures.tgz'
   '@rush-temp/autopilot': 'file:projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:projects/aviation-communication.tgz'
+  '@rush-temp/blockchain': 'file:projects/blockchain.tgz'
   '@rush-temp/blueprint': 'file:projects/blueprint.tgz'
   '@rush-temp/check-in': 'file:projects/check-in.tgz'
   '@rush-temp/client': 'file:projects/client.tgz'
   '@rush-temp/conversations': 'file:projects/conversations.tgz'
+  '@rush-temp/data-model': 'file:projects/data-model.tgz'
   '@rush-temp/direction-indicator': 'file:projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:projects/flight-number.tgz'
@@ -59,6 +61,7 @@ dependencies:
   '@rush-temp/session-state': 'file:projects/session-state.tgz'
   '@rush-temp/sqlite': 'file:projects/sqlite.tgz'
   '@rush-temp/sqljs': 'file:projects/sqljs.tgz'
+  '@rush-temp/sso': 'file:projects/sso.tgz'
   '@rush-temp/takeoff': 'file:projects/takeoff.tgz'
   '@rush-temp/tarmaq-dao': 'file:projects/tarmaq-dao.tgz'
   '@rush-temp/tarmaq-entity': 'file:projects/tarmaq-entity.tgz'
@@ -69,6 +72,7 @@ dependencies:
   '@rush-temp/terminal-map': 'file:projects/terminal-map.tgz'
   '@rush-temp/topics': 'file:projects/topics.tgz'
   '@rush-temp/tower': 'file:projects/tower.tgz'
+  '@rush-temp/transfer': 'file:projects/transfer.tgz'
   '@rush-temp/travel-document-checkpoint': 'file:projects/travel-document-checkpoint.tgz'
   '@rush-temp/types': 'file:projects/types.tgz'
   '@rush-temp/ui-angular': 'file:projects/ui-angular.tgz_f5c2ef35c77570afa5336c1b144b19f2'
@@ -7980,6 +7984,17 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha512-wkgGT6kugeQk/P6VZ/f4T+4HB41BVgNBq5CDIZVbQ02nvTVqAiVTbskxxu3eA/X96lMlfYOwnLQpN2v5E1zDEg==
+  /emailjs/4.0.1:
+    dev: false
+    engines:
+      node: '>=12'
+    peerDependencies:
+      typescript: '>=4.3.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    resolution:
+      integrity: sha512-rTN/LDvlqwU79E367ovB7FIziImzimhQcZiGmC20VcDPbf0mv3l9c3aavtMcEFaFBsycjGB5aMIhz4ZbKNeLWw==
   /emittery/0.10.2:
     dev: false
     engines:
@@ -18155,6 +18170,26 @@ packages:
       integrity: sha512-QaEGiGMwxrv+dhEfokVZBE8s94velc5qiAyEDqtUkC19r2OXLqQWHKX0SP9EgL3h0Q0vvlU10Ni8M0pv0VOQiw==
       tarball: 'file:projects/aviation-communication.tgz'
     version: 0.0.0
+  'file:projects/blockchain.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.4.0
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+    dev: false
+    name: '@rush-temp/blockchain'
+    resolution:
+      integrity: sha512-A4RShVAdaJ+5pO1Iujv3llK6B0MCv33VnkV5cQBWeuQTMboiAbJMBrHU9ZmulI4For2x7P7ZXNqlF6g20GzDUQ==
+      tarball: 'file:projects/blockchain.tgz'
+    version: 0.0.0
   'file:projects/blueprint.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
@@ -18238,6 +18273,26 @@ packages:
     resolution:
       integrity: sha512-mCKvQUraBsMNF/8HD1tRgTUJhB41BNeRPTBmhnc/LLBPEMb0DWLD5atgcEaHWeerM2YJgcO1Yfyu/TBJyUx5Kw==
       tarball: 'file:projects/conversations.tgz'
+    version: 0.0.0
+  'file:projects/data-model.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.4.0
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+    dev: false
+    name: '@rush-temp/data-model'
+    resolution:
+      integrity: sha512-DwgVD0eSz58GVBlqQPc3A1MGVlykgX7ks5jnmQgOUxwpVFTegwIrH4yCRT7VkTLdPprV+tppsQSPeQ4e9rNRRg==
+      tarball: 'file:projects/data-model.tgz'
     version: 0.0.0
   'file:projects/direction-indicator.tgz':
     dependencies:
@@ -18655,6 +18710,27 @@ packages:
       integrity: sha512-YPtvjWWBfFrZmsxr6nuPj/ELMzjWPBUAW2c/WZ5GXjX2Auus+bg6nJbVqX+DyKIOpPH5S2X/rLxmPhRYkM8eHg==
       tarball: 'file:projects/sqljs.tgz'
     version: 0.0.0
+  'file:projects/sso.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      emailjs: 4.0.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.4.0
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+    dev: false
+    name: '@rush-temp/sso'
+    resolution:
+      integrity: sha512-lj2SfMvRqwNn6sy6XY0XvTJirnfT5sxaaHdeDgNtJbhPl+IVMFe7t4QKBf6pcNKtEgWjOSySwHS8zm9lK4SJsQ==
+      tarball: 'file:projects/sso.tgz'
+    version: 0.0.0
   'file:projects/takeoff.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
@@ -18858,6 +18934,26 @@ packages:
     resolution:
       integrity: sha512-rkU4vEXlvNwiuHJFF+YkspYNRN7wL6gGBeFBUZry53r/kaTwyAoL/be4oQcH8qTgrTxRn4VsggNKcUza/H+I8g==
       tarball: 'file:projects/tower.tgz'
+    version: 0.0.0
+  'file:projects/transfer.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.4.0
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+    dev: false
+    name: '@rush-temp/transfer'
+    resolution:
+      integrity: sha512-JjqCVzUapcliVOddbxSIvKg3eP2jl/S6PnnmjZD7qTCpRxdQZb2dQc6PNtGNZ+T+RNrQj7SOtAsTZxRLjOkzoA==
+      tarball: 'file:projects/transfer.tgz'
     version: 0.0.0
   'file:projects/travel-document-checkpoint.tgz':
     dependencies:
@@ -19231,10 +19327,12 @@ specifiers:
   '@rush-temp/arrivals-n-departures': 'file:./projects/arrivals-n-departures.tgz'
   '@rush-temp/autopilot': 'file:./projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:./projects/aviation-communication.tgz'
+  '@rush-temp/blockchain': 'file:./projects/blockchain.tgz'
   '@rush-temp/blueprint': 'file:./projects/blueprint.tgz'
   '@rush-temp/check-in': 'file:./projects/check-in.tgz'
   '@rush-temp/client': 'file:./projects/client.tgz'
   '@rush-temp/conversations': 'file:./projects/conversations.tgz'
+  '@rush-temp/data-model': 'file:./projects/data-model.tgz'
   '@rush-temp/direction-indicator': 'file:./projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:./projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:./projects/flight-number.tgz'
@@ -19256,6 +19354,7 @@ specifiers:
   '@rush-temp/session-state': 'file:./projects/session-state.tgz'
   '@rush-temp/sqlite': 'file:./projects/sqlite.tgz'
   '@rush-temp/sqljs': 'file:./projects/sqljs.tgz'
+  '@rush-temp/sso': 'file:./projects/sso.tgz'
   '@rush-temp/takeoff': 'file:./projects/takeoff.tgz'
   '@rush-temp/tarmaq-dao': 'file:./projects/tarmaq-dao.tgz'
   '@rush-temp/tarmaq-entity': 'file:./projects/tarmaq-entity.tgz'
@@ -19266,6 +19365,7 @@ specifiers:
   '@rush-temp/terminal-map': 'file:./projects/terminal-map.tgz'
   '@rush-temp/topics': 'file:./projects/topics.tgz'
   '@rush-temp/tower': 'file:./projects/tower.tgz'
+  '@rush-temp/transfer': 'file:./projects/transfer.tgz'
   '@rush-temp/travel-document-checkpoint': 'file:./projects/travel-document-checkpoint.tgz'
   '@rush-temp/types': 'file:./projects/types.tgz'
   '@rush-temp/ui-angular': 'file:./projects/ui-angular.tgz'

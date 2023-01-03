@@ -97,7 +97,7 @@ const airportThirdStageBuild = {
 }
 
 const airportReactUiBuild = {
-    project: 'AIRport',
+    project: 'AIRbridge',
     uiType: 'React',
     componentsInBuildOrder: [
         'UI/react/components',
