@@ -21,9 +21,10 @@ const airportFirstStageBuild = {
     ]
 }
 
-const airbridgeBuild = {
+const airbridgeFirstStageBuild = {
     project: 'AIRbridge',
     componentsInBuildOrder: [
+        'data-model',
         'validate'
     ]
 }
@@ -69,6 +70,13 @@ const airportSecondStageBuild = {
         'libs/blueprint',
         'generators/takeoff',
         'generators/landing'
+    ]
+}
+
+const airbridgeSecondStageBuild = {
+    project: 'AIRbridge',
+    componentsInBuildOrder: [
+        'keyring'
     ]
 }
 
@@ -119,8 +127,9 @@ try {
     await execute('npm', ['run', 'build'], '.')
 
     await buildPeerProjects(airportFirstStageBuild)
-    await buildPeerProjects(airbridgeBuild)
+    await buildPeerProjects(airbridgeFirstStageBuild)
     await buildPeerProjects(airportSecondStageBuild)
+    await buildPeerProjects(airbridgeSecondStageBuild)
     await buildPeerProjects(airwayBuild)
     await buildPeerProjects(airportThirdStageBuild)
     await buildUI(airportReactUiBuild)

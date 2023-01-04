@@ -48,6 +48,7 @@ dependencies:
   '@rush-temp/ground-transport': 'file:projects/ground-transport.tgz'
   '@rush-temp/holding-pattern': 'file:projects/holding-pattern.tgz'
   '@rush-temp/in-memory-server': 'file:projects/in-memory-server.tgz'
+  '@rush-temp/keyring': 'file:projects/keyring.tgz'
   '@rush-temp/landing': 'file:projects/landing.tgz'
   '@rush-temp/layover': 'file:projects/layover.tgz'
   '@rush-temp/mysql': 'file:projects/mysql.tgz'
@@ -18249,7 +18250,7 @@ packages:
     dev: false
     name: '@rush-temp/client'
     resolution:
-      integrity: sha512-hZ51LzUgPhO92ZpiMry2Oz2tYWoeMrA+P30CRnxYtlpcJh7O80ta+2h50WYw1ZQR4Iw9gbBSI6CfIVSii/Z+tQ==
+      integrity: sha512-qnyybG7DPqlTaxQ/D24a7XZsgZHRc6FzFtWDdnsMFyUaQFtIrmBaMt76GfoQzcpAUh133v/NOlUwk62fAtoKkw==
       tarball: 'file:projects/client.tgz'
     version: 0.0.0
   'file:projects/conversations.tgz':
@@ -18448,8 +18449,28 @@ packages:
     dev: false
     name: '@rush-temp/in-memory-server'
     resolution:
-      integrity: sha512-T5JRDUv42r+fwRoQXzc1XI+kq3iiAJ91+nYgMazU03jQQs1GcS25krgzRCRxrkQ3nw9ZNhkzYROApRHNOBysFg==
+      integrity: sha512-HcyByuX6mkp9AZEPdJi9ZBhvPxakRW5W81mTnoju2gnqvfOJPIdGtVGQyMAUqLIeXTPz2BG8umYTpRNAcAqWwA==
       tarball: 'file:projects/in-memory-server.tgz'
+    version: 0.0.0
+  'file:projects/keyring.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.4.0
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+    dev: false
+    name: '@rush-temp/keyring'
+    resolution:
+      integrity: sha512-YIC/V3Oa8PGOXOr+TKMu6gdtL70lBhDsiXE6N1MDOzPnu06s92axdRC/q2t2kxwcoCsUYlJKxAEFhE4TfAtOCQ==
+      tarball: 'file:projects/keyring.tgz'
     version: 0.0.0
   'file:projects/landing.tgz':
     dependencies:
@@ -18728,7 +18749,7 @@ packages:
     dev: false
     name: '@rush-temp/sso'
     resolution:
-      integrity: sha512-lj2SfMvRqwNn6sy6XY0XvTJirnfT5sxaaHdeDgNtJbhPl+IVMFe7t4QKBf6pcNKtEgWjOSySwHS8zm9lK4SJsQ==
+      integrity: sha512-uI8XRlAW52o8Qu7PVsl75a7RSJaBokQ9FIr2u1GYv7shrs+Be07yh7kZ+/JcvbqR1S7PZVaNP6eriXZOO3iBkw==
       tarball: 'file:projects/sso.tgz'
     version: 0.0.0
   'file:projects/takeoff.tgz':
@@ -19176,7 +19197,7 @@ packages:
     peerDependencies:
       ts-node: '*'
     resolution:
-      integrity: sha512-t4fha6Lhs2WKG7Dpuaqp4GfLkvzDZ8E706MZM/CtHbLbnp+Ro3LwqXpC5IbO2Tn/vlEK1w8eiOYTTKah0WWxqw==
+      integrity: sha512-yBu8mvCEGCKW7qptYGYGEaMqc0p7ZPR9pQh0dWJJQEreELr748wdpczz+zsl67rcE8d1qgXNNeyEZ7xlcP8iyw==
       tarball: 'file:projects/ui-react-main.tgz'
     version: 0.0.0
   'file:projects/ui-svelte-main.tgz_f5125a430752a2fa1e687e96f15521c9':
@@ -19341,6 +19362,7 @@ specifiers:
   '@rush-temp/ground-transport': 'file:./projects/ground-transport.tgz'
   '@rush-temp/holding-pattern': 'file:./projects/holding-pattern.tgz'
   '@rush-temp/in-memory-server': 'file:./projects/in-memory-server.tgz'
+  '@rush-temp/keyring': 'file:./projects/keyring.tgz'
   '@rush-temp/landing': 'file:./projects/landing.tgz'
   '@rush-temp/layover': 'file:./projects/layover.tgz'
   '@rush-temp/mysql': 'file:./projects/mysql.tgz'

@@ -238,6 +238,11 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@airbridge/keyring",
+      "projectFolder": "./AIRbridge/keyring",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@airbridge/sso",
       "projectFolder": "./AIRbridge/sso",
       "shouldPublish": true
