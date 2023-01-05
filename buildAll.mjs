@@ -49,6 +49,7 @@ const airportSecondStageBuild = {
         // },
         'schemas/holding-pattern',
         'schemas/final-approach',
+        'schemas/flight-recorder',
         // {
         //     directory: 'schemas/holding-pattern',
         //     isApp: true

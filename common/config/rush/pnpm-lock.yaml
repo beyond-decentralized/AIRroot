@@ -43,6 +43,7 @@ dependencies:
   '@rush-temp/direction-indicator': 'file:projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:projects/flight-number.tgz'
+  '@rush-temp/flight-recorder': 'file:projects/flight-recorder.tgz'
   '@rush-temp/fuel-hydrant-system': 'file:projects/fuel-hydrant-system.tgz'
   '@rush-temp/ground-control': 'file:projects/ground-control.tgz'
   '@rush-temp/ground-transport': 'file:projects/ground-transport.tgz'
@@ -18042,7 +18043,7 @@ packages:
     dev: false
     name: '@rush-temp/airport-code'
     resolution:
-      integrity: sha512-vAyoF7T3vrONWp628moFSXE6DC2xQ3bkZtYnl7Q56LR2EzBFD6Qz3r73kObUa6DU350UM96l8yEDbnSE8LlAyQ==
+      integrity: sha512-BYZ2GhpsM0zp1mhXqzZYTqld1UL6wiwCE+cWbO6wFssq2U3WrplXz6sNwEV3UVV6XAuESC/vRj03j6MWfpMIuQ==
       tarball: 'file:projects/airport-code.tgz'
     version: 0.0.0
   'file:projects/airroot.tgz':
@@ -18071,7 +18072,7 @@ packages:
     dev: false
     name: '@rush-temp/airspace'
     resolution:
-      integrity: sha512-EB3tYb2oUNd89v0UNFN6LVs03URDcBpmbrDkfsPbYxRohy/sCG+7erhdXhXaosQf7YS97JLhf0kSITLPvoZaBA==
+      integrity: sha512-Oubk5wZc4dEgieKe1mND2P/CmgaT9H9bHKIsENtKB6jEQEHlI1Fmy4PeIinM91dYfSB9qNAyw13Q/S9D5HQkvQ==
       tarball: 'file:projects/airspace.tgz'
     version: 0.0.0
   'file:projects/api.tgz':
@@ -18207,7 +18208,7 @@ packages:
     dev: false
     name: '@rush-temp/blueprint'
     resolution:
-      integrity: sha512-9HJ7oNRGVUGjbMjATyLK/nm0z2QYAF2x5XFYfBD7Z2HALzI42wyPh7Q67XxpZBod8WjJYyFUjDJJTbn55uNSkg==
+      integrity: sha512-ME1djuMn7ElSFoDr7wi980NiafRq9CPSQwmXZ+ZsuCTui4s6jovaxwvs5meASWo7LpQfi0H2XJN4PFRLQdcatg==
       tarball: 'file:projects/blueprint.tgz'
     version: 0.0.0
   'file:projects/check-in.tgz':
@@ -18250,7 +18251,7 @@ packages:
     dev: false
     name: '@rush-temp/client'
     resolution:
-      integrity: sha512-qnyybG7DPqlTaxQ/D24a7XZsgZHRc6FzFtWDdnsMFyUaQFtIrmBaMt76GfoQzcpAUh133v/NOlUwk62fAtoKkw==
+      integrity: sha512-hZ51LzUgPhO92ZpiMry2Oz2tYWoeMrA+P30CRnxYtlpcJh7O80ta+2h50WYw1ZQR4Iw9gbBSI6CfIVSii/Z+tQ==
       tarball: 'file:projects/client.tgz'
     version: 0.0.0
   'file:projects/conversations.tgz':
@@ -18292,7 +18293,7 @@ packages:
     dev: false
     name: '@rush-temp/data-model'
     resolution:
-      integrity: sha512-DwgVD0eSz58GVBlqQPc3A1MGVlykgX7ks5jnmQgOUxwpVFTegwIrH4yCRT7VkTLdPprV+tppsQSPeQ4e9rNRRg==
+      integrity: sha512-69gE0SlfuaXhiIMgCij1s49sO9TZpF9GD6qOvuQgUlRj7JAAKDJE9rc2SasKsENPvDflUJApoAP3LssWN5g52g==
       tarball: 'file:projects/data-model.tgz'
     version: 0.0.0
   'file:projects/direction-indicator.tgz':
@@ -18353,6 +18354,26 @@ packages:
     resolution:
       integrity: sha512-M2iZI3Iw+EvEB+dsTK3e+82Cz5Ob0yKvrGn14HOlyrNOpyGc1Ne02qd0FaPCsLIoxyK5H5PybIDiqTLCjC0I8A==
       tarball: 'file:projects/flight-number.tgz'
+    version: 0.0.0
+  'file:projects/flight-recorder.tgz':
+    dependencies:
+      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
+      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
+      rollup: 2.79.1
+      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
+      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
+      rollup-plugin-terser: 7.0.2_rollup@2.79.1
+      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      ts-node: 10.9.1_typescript@4.9.4
+      ts-patch: 2.1.0_typescript@4.9.4
+      tslib: 2.4.1
+      typescript: 4.9.4
+      uuid: 8.3.2
+    dev: false
+    name: '@rush-temp/flight-recorder'
+    resolution:
+      integrity: sha512-25f3UcPe38XlpQzK0KxlLyt1V2XjZI+EICUEsSthhAODUylk6iaEplS5zDsEv5qa7LcjYHCDvu7uSlZAyDEvVQ==
+      tarball: 'file:projects/flight-recorder.tgz'
     version: 0.0.0
   'file:projects/fuel-hydrant-system.tgz':
     dependencies:
@@ -18432,7 +18453,7 @@ packages:
     dev: false
     name: '@rush-temp/holding-pattern'
     resolution:
-      integrity: sha512-PM/e49tRHOJICDDBT/PVfDRETKAnilP36UBbxLGf6zjpOZvmpcd48McZoXhWD5KXvwi1g80SUpJGHFECBWIxAw==
+      integrity: sha512-8AHxedjQp95hL+bxWNy8yZasX472fN4cvlovwvo7+v3taLSvkyo6FBacCChXsItRFlO8andYgEslL9x+G3kAMQ==
       tarball: 'file:projects/holding-pattern.tgz'
     version: 0.0.0
   'file:projects/in-memory-server.tgz':
@@ -18449,7 +18470,7 @@ packages:
     dev: false
     name: '@rush-temp/in-memory-server'
     resolution:
-      integrity: sha512-HcyByuX6mkp9AZEPdJi9ZBhvPxakRW5W81mTnoju2gnqvfOJPIdGtVGQyMAUqLIeXTPz2BG8umYTpRNAcAqWwA==
+      integrity: sha512-T5JRDUv42r+fwRoQXzc1XI+kq3iiAJ91+nYgMazU03jQQs1GcS25krgzRCRxrkQ3nw9ZNhkzYROApRHNOBysFg==
       tarball: 'file:projects/in-memory-server.tgz'
     version: 0.0.0
   'file:projects/keyring.tgz':
@@ -18466,10 +18487,11 @@ packages:
       ts-patch: 2.1.0_typescript@4.9.4
       tslib: 2.4.1
       typescript: 4.9.4
+      uuid: 8.3.2
     dev: false
     name: '@rush-temp/keyring'
     resolution:
-      integrity: sha512-YIC/V3Oa8PGOXOr+TKMu6gdtL70lBhDsiXE6N1MDOzPnu06s92axdRC/q2t2kxwcoCsUYlJKxAEFhE4TfAtOCQ==
+      integrity: sha512-zsMzV6+IaUToOMescvDMIcsnUw6UIzU5eyQV/rqMw8dQw5m+g1f9VuGTcfz0wXbKZG0vayUAhMJp29ktGQMswQ==
       tarball: 'file:projects/keyring.tgz'
     version: 0.0.0
   'file:projects/landing.tgz':
@@ -18508,7 +18530,7 @@ packages:
     dev: false
     name: '@rush-temp/layover'
     resolution:
-      integrity: sha512-5Xudft93nQMytlui3441lMxrnYXLGziSCrbCvODQ+hWFrOzTXff4y7dTZTRZMWSkhnppqNACwNwdE2HJ0/f3Jw==
+      integrity: sha512-T/QDLCLsmWnlTS+4ML62BZ0Pat+Nj6YXt8Ucza5xfKVCwyJ18j2likYnFock9bynJPn1FY/X38VBiSGCqbKztw==
       tarball: 'file:projects/layover.tgz'
     version: 0.0.0
   'file:projects/mysql.tgz':
@@ -18686,7 +18708,7 @@ packages:
     dev: false
     name: '@rush-temp/session-state'
     resolution:
-      integrity: sha512-jvqdN3rcgUmcLMhAin41Nkkafh7x4XJPJxorxasPS5URkKXM3W6k6UzHxou+5/V16O2i0YUyZI9BEunW1aDzNw==
+      integrity: sha512-Rya64jjNiL5gZ8tIjAdPSIK6N1HtscbIj511U6M6/KMeUhcoP7MnI9ana86fobFa7iD3CkdMP4Fp1SP2IeF9ZQ==
       tarball: 'file:projects/session-state.tgz'
     version: 0.0.0
   'file:projects/sqlite.tgz':
@@ -18888,7 +18910,7 @@ packages:
     dev: false
     name: '@rush-temp/terminal-map'
     resolution:
-      integrity: sha512-96W1mbVV4/cG6bTpGnAceKjD+DC4mCKCLIximtDQZLRp8hIuYBRI0g/grKwARzbzfOYBFb22TOZhtZIGrDRSrg==
+      integrity: sha512-HzULhW+Wa1av3LoK37iAKke2iI223fhYODEo6yqZeVVpngJB5eNvDAQsJEzK6fo+CP72ZGJjvqZff9XLGMxvhw==
       tarball: 'file:projects/terminal-map.tgz'
     version: 0.0.0
   'file:projects/terminal.tgz':
@@ -18910,7 +18932,7 @@ packages:
     dev: false
     name: '@rush-temp/terminal'
     resolution:
-      integrity: sha512-vDr2EH4lFrBpWXYDyPm+uuju6ARg+CF6DFYklvivpl6zE8pDKiLimsIYvBhMZ/Goe+fOX+MeK0ikv+/ZztEk5g==
+      integrity: sha512-R8Z3d9VVZQRVMuHltMd9gilCq6OKICdTjdOqjDIAP2xXWgEnuLeQePfvulrGGCf5QN+1IqhgAi7BDFmy4QtYmw==
       tarball: 'file:projects/terminal.tgz'
     version: 0.0.0
   'file:projects/topics.tgz':
@@ -18993,7 +19015,7 @@ packages:
     dev: false
     name: '@rush-temp/travel-document-checkpoint'
     resolution:
-      integrity: sha512-wuhHYFlHDBOpYH5PjqDAVibTEEH4pLbnGIQaz/GrrkK2iPDjL6qHyIEi0FM0MpIraP7LzDR4WUv/Hl8vO7wTCQ==
+      integrity: sha512-dRBZVm+V2fOoWvCLVfx8PVHwNh9koIwsPMf0EMgWx97DbwnnRSf5RBcAzDnUQnsoXPBMCZaHbaAp80zMyz2OHQ==
       tarball: 'file:projects/travel-document-checkpoint.tgz'
     version: 0.0.0
   'file:projects/types.tgz':
@@ -19357,6 +19379,7 @@ specifiers:
   '@rush-temp/direction-indicator': 'file:./projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:./projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:./projects/flight-number.tgz'
+  '@rush-temp/flight-recorder': 'file:./projects/flight-recorder.tgz'
   '@rush-temp/fuel-hydrant-system': 'file:./projects/fuel-hydrant-system.tgz'
   '@rush-temp/ground-control': 'file:./projects/ground-control.tgz'
   '@rush-temp/ground-transport': 'file:./projects/ground-transport.tgz'
