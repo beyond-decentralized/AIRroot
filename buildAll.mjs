@@ -67,7 +67,6 @@ const airportSecondStageBuild = {
         //     directory: 'libs/session-state',
         //     isApp: true
         // },
-        'libs/blueprint',
         'generators/takeoff',
         'generators/landing'
     ]
@@ -91,6 +90,7 @@ const airwayBuild = {
 const airportThirdStageBuild = {
     project: 'AIRport',
     componentsInBuildOrder: [
+        'libs/blueprint',
         'libs/ground-transport',
         'engines/terminal',
         'databases/sequence',
