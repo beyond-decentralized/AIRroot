@@ -11,6 +11,7 @@ dependencies:
   '@angular/platform-browser': 15.0.4_0dacf5c1be2a9acdc88cc30b05d6dd0b
   '@angular/platform-browser-dynamic': 15.0.4_3b5beaed9fbbcb6c76d433b35a4e12c2
   '@angular/router': 15.0.4_296ccc26ddd732d448d2a406290f1980
+  '@as-com/pson': 3.0.1
   '@babel/core': 7.20.7_@babel+core@7.20.7
   '@babel/runtime': 7.20.6
   '@capacitor/app': 4.1.1_@capacitor+core@4.6.1
@@ -806,6 +807,15 @@ packages:
       ajv: '>=8'
     resolution:
       integrity: sha512-P+ZygBLZtkp0qqOAJJVX4oX/sFo5JR3eBWwwuqHHhK0GIgQOKWrAfiAaWX0aArHkRWHMuggFEgAZNxVPwPZYaA==
+  /@as-com/pson/3.0.1:
+    dependencies:
+      bytebuffer: 5.0.1
+      long: 3.2.0
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-tIx6kBa3guFBMrWhQ+hqPbpDQFptlL2TdFIDqwTSN0w9MYy+Aaw48vIMSiKYIIM7z3EwuCen1U/htO7k2oS9DQ==
   /@assemblyscript/loader/0.10.1:
     dev: false
     resolution:
@@ -6704,6 +6714,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==
+  /bytebuffer/5.0.1:
+    dependencies:
+      long: 3.2.0
+    dev: false
+    engines:
+      node: '>=0.8'
+    resolution:
+      integrity: sha512-IuzSdmADppkZ6DlpycMkm8l9zeEq16fWtLvunEwFiYciR/BHo4E8/xs5piFquG+Za8OWmMqHF8zuRviz2LHvRQ==
   /bytes/3.0.0:
     dev: false
     engines:
@@ -11825,6 +11843,12 @@ packages:
       node: '>=0.6'
     resolution:
       integrity: sha512-ijUtjmO/n2A5PaosNG9ZGDsQ3vxJg7ZW8vsY8Kp0f2yIZWhSJvjmegV7t+9RPQKxKrvj8yKGehhS+po14hPLGQ==
+  /long/3.2.0:
+    dev: false
+    engines:
+      node: '>=0.6'
+    resolution:
+      integrity: sha512-ZYvPPOMqUwPoDsbJaR10iQJYnMuZhRTvHYl62ErLIEX7RgFlziSBUUvrt3OVfc47QlHHpzPZYP17g3Fv7oeJkg==
   /long/4.0.0:
     dev: false
     resolution:
@@ -18208,7 +18232,7 @@ packages:
     dev: false
     name: '@rush-temp/blueprint'
     resolution:
-      integrity: sha512-ME1djuMn7ElSFoDr7wi980NiafRq9CPSQwmXZ+ZsuCTui4s6jovaxwvs5meASWo7LpQfi0H2XJN4PFRLQdcatg==
+      integrity: sha512-4IEvoKdquiI02u1xfEJC3KeKTCX86LBpnphONDOsTmiwWMsEFZJhbxFQU/2ZNoYfyAETquvGGpi46tZTQ43aVA==
       tarball: 'file:projects/blueprint.tgz'
     version: 0.0.0
   'file:projects/check-in.tgz':
@@ -18418,6 +18442,7 @@ packages:
     version: 0.0.0
   'file:projects/ground-transport.tgz':
     dependencies:
+      '@as-com/pson': 3.0.1
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
       '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
       rollup: 2.79.1
@@ -18433,7 +18458,7 @@ packages:
     dev: false
     name: '@rush-temp/ground-transport'
     resolution:
-      integrity: sha512-hggwlQAduNNJoe8YYLdqnOLAJq2NNELjtsjKhHk3G85mIRZmiB1S6lKGEP/CqeiPqZPsZdMNL7CB7onaR3+CRg==
+      integrity: sha512-9F7K4StVZxrg7vI3LiDyWLMfp0dHRt/nePs4gLOsxPkDhmBnibJ7x9KhPQcA8YBWhdZY+dxV/BU3zRaSdVtrOg==
       tarball: 'file:projects/ground-transport.tgz'
     version: 0.0.0
   'file:projects/holding-pattern.tgz':
@@ -18932,7 +18957,7 @@ packages:
     dev: false
     name: '@rush-temp/terminal'
     resolution:
-      integrity: sha512-R8Z3d9VVZQRVMuHltMd9gilCq6OKICdTjdOqjDIAP2xXWgEnuLeQePfvulrGGCf5QN+1IqhgAi7BDFmy4QtYmw==
+      integrity: sha512-n62COg/cUtUej3ix/QFDs8Djfm77MA6kw1oXbzScwbw8MUcIyAeDAisxdUyrwwJGOB18E6t4IBqY4Y7wKU9waQ==
       tarball: 'file:projects/terminal.tgz'
     version: 0.0.0
   'file:projects/topics.tgz':
@@ -19347,6 +19372,7 @@ specifiers:
   '@angular/platform-browser': ^15.0.0
   '@angular/platform-browser-dynamic': ^15.0.0
   '@angular/router': ^15.0.0
+  '@as-com/pson': ^3.0.1
   '@babel/core': ^7.16.0
   '@babel/runtime': 7.20.6
   '@capacitor/app': 4.1.1
