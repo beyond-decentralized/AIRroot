@@ -12,6 +12,7 @@ const airportFirstStageBuild = {
         'ORMs/tarmaq/entity',
         'ORMs/tarmaq/query',
         'ORMs/tarmaq/dao',
+        'apis/arrivals-n-departures',
         'apis/air-traffic-control',
         'libs/airgate',
         'libs/pressurization',
@@ -33,41 +34,16 @@ const airportSecondStageBuild = {
     project: 'AIRport',
     componentsInBuildOrder: [
         'schemas/airport-code',
-        // {
-        //     directory: 'schemas/airport-code',
-        //     isApp: true
-        // },
         'schemas/airspace',
-        // {
-        //     directory: 'schemas/airspace',
-        //     isApp: true
-        // },
         'schemas/travel-document-checkpoint',
-        // {
-        //     directory: 'schemas/travel-document-checkpoint',
-        //     isApp: true
-        // },
         'schemas/holding-pattern',
         'schemas/final-approach',
         'schemas/flight-recorder',
-        // {
-        //     directory: 'schemas/holding-pattern',
-        //     isApp: true
-        // },
         'schemas/layover',
-        // {
-        //     directory: 'schemas/layover',
-        //     isApp: true
-        // },
-        'apis/arrivals-n-departures',
         'apis/terminal-map',
         'engines/tower',
         'libs/fuel-hydrant-system',
         'libs/session-state',
-        // {
-        //     directory: 'libs/session-state',
-        //     isApp: true
-        // },
         'generators/takeoff',
         'generators/landing'
     ]
@@ -124,14 +100,19 @@ const airlineBuild = {
 }
 
 try {
+    // Often build fails because (apparently) the dependency links
+    // still point to old version of dist directories, when commenting
+    // out other build steps, do not comment out 'wireInDependencies'
+    // (which is `rush update`)
     await wireInDependencies('.')
+
     await execute('npm', ['run', 'build'], '.')
 
     await buildPeerProjects(airportFirstStageBuild)
+    await buildPeerProjects(airwayBuild)
     await buildPeerProjects(airbridgeFirstStageBuild)
     await buildPeerProjects(airportSecondStageBuild)
     await buildPeerProjects(airbridgeSecondStageBuild)
-    await buildPeerProjects(airwayBuild)
     await buildPeerProjects(airportThirdStageBuild)
     await buildUI(airportReactUiBuild)
     await buildPeerProjects(airlineBuild)
