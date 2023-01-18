@@ -60,7 +60,8 @@ const airportSecondStageBuild = {
 const airbridgeSecondStageBuild = {
     project: 'AIRbridge',
     componentsInBuildOrder: [
-        'keyring'
+        'keyring',
+        'sso'
     ]
 }
 
