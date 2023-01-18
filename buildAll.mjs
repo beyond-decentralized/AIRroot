@@ -14,11 +14,20 @@ const airportFirstStageBuild = {
         'ORMs/tarmaq/dao',
         'apis/arrivals-n-departures',
         'apis/air-traffic-control',
+        'apis/terminal-map',
         'libs/airgate',
         'libs/pressurization',
         'libs/vhf-radio',
         'libs/autopilot',
         'libs/flight-number'
+    ]
+}
+
+const airwayBuild = {
+    project: 'AIRway',
+    componentsInBuildOrder: [
+        'types',
+        'client'
     ]
 }
 
@@ -40,7 +49,6 @@ const airportSecondStageBuild = {
         'schemas/final-approach',
         'schemas/flight-recorder',
         'schemas/layover',
-        'apis/terminal-map',
         'engines/tower',
         'libs/fuel-hydrant-system',
         'libs/session-state',
@@ -53,14 +61,6 @@ const airbridgeSecondStageBuild = {
     project: 'AIRbridge',
     componentsInBuildOrder: [
         'keyring'
-    ]
-}
-
-const airwayBuild = {
-    project: 'AIRway',
-    componentsInBuildOrder: [
-        'types',
-        'client'
     ]
 }
 
@@ -102,8 +102,9 @@ const airlineBuild = {
 try {
     // Often build fails because (apparently) the dependency links
     // still point to old version of dist directories, when commenting
-    // out other build steps, do not comment out 'wireInDependencies'
-    // (which is `rush update`)
+    // out other build steps, unless are accutely aware of this and
+    // that you have to re-run 'rush update' manually in those cases)
+    // do not comment out 'wireInDependencies' (which is `rush update`)
     await wireInDependencies('.')
 
     await execute('npm', ['run', 'build'], '.')
