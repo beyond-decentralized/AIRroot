@@ -49,8 +49,7 @@ const airportSecondStageBuild = {
         'engines/tower',
         'libs/fuel-hydrant-system',
         'libs/session-state',
-        'generators/takeoff',
-        'generators/landing'
+        'generators/takeoff'
     ]
 }
 

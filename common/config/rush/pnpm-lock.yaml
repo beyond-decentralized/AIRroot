@@ -48,7 +48,6 @@ dependencies:
   '@rush-temp/holding-pattern': 'file:projects/holding-pattern.tgz'
   '@rush-temp/in-memory-server': 'file:projects/in-memory-server.tgz'
   '@rush-temp/keyring': 'file:projects/keyring.tgz'
-  '@rush-temp/landing': 'file:projects/landing.tgz'
   '@rush-temp/layover': 'file:projects/layover.tgz'
   '@rush-temp/mysql': 'file:projects/mysql.tgz'
   '@rush-temp/postgres': 'file:projects/postgres.tgz'
@@ -18490,25 +18489,6 @@ packages:
       integrity: sha512-dsn8Pl9fFSuz481FF4bDTd6SDMaz906hO8ljsLdcagYuwnudOe6Qaal5hvkOsLVO6TZBcgcEp4dBc9apWJ+W1g==
       tarball: 'file:projects/keyring.tgz'
     version: 0.0.0
-  'file:projects/landing.tgz':
-    dependencies:
-      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
-      rollup: 2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
-      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
-      ts-node: 10.9.1_typescript@4.9.4
-      ts-patch: 2.1.0_typescript@4.9.4
-      tslib: 2.4.1
-      typescript: 4.9.4
-    dev: false
-    name: '@rush-temp/landing'
-    resolution:
-      integrity: sha512-WtLfaaIvLYTi/Xc3FS4mZWypShJppX+pfXXtxRIQYnnbBYCgaxW+Zy+P84XhA5irQ0d7pMKPcz5WzhSwBwNydQ==
-      tarball: 'file:projects/landing.tgz'
-    version: 0.0.0
   'file:projects/layover.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
@@ -18546,7 +18526,7 @@ packages:
     dev: false
     name: '@rush-temp/mysql'
     resolution:
-      integrity: sha512-iklkRfT6mv5N580TVD6pkssPEfgem0GkgX7ydSupF6OFtYIRHO1u/cmDs+nnRPS/tyFkfOc6H/89WoVO0h2txw==
+      integrity: sha512-jR0fjQuRthmXZPzY8Ix69ExGnL/CjlPA3GTk/poaNDow0CX7+2m8rBBvAp9mnij8+swckMaUlALo1uD2glq/Tw==
       tarball: 'file:projects/mysql.tgz'
     version: 0.0.0
   'file:projects/postgres.tgz':
@@ -18569,7 +18549,7 @@ packages:
     dev: false
     name: '@rush-temp/postgres'
     resolution:
-      integrity: sha512-EvtAZXtKSM5CBOdZvR6Hwx3HsUNIo96IdtjdsakMozAf2U1bKw+8d1FooEJUB2CbWDAWpHDk8e+U3isf4b0Xmw==
+      integrity: sha512-lQ0XS+1dCvKzWrSep9XEi7dAJLqQRYvNfe2kaZl1tWoQmQLpL+xt8Oeh4+T7jHIQB801qdyh7mrjEurCrc5XCg==
       tarball: 'file:projects/postgres.tgz'
     version: 0.0.0
   'file:projects/pressurization.tgz':
@@ -18630,7 +18610,7 @@ packages:
     dev: false
     name: '@rush-temp/runway'
     resolution:
-      integrity: sha512-0a7vy5ccmRmSgl9EVbICxLepw2OaGz/0klg0L/VtO1kM72h8JR2AhPD/ojBH/OkJ/Qsh9uHHNJtqnzTPh6FD7Q==
+      integrity: sha512-4tvb5UhQfhyxMnehwxpEJjq9XrL9RcUnDo7DVupTyslD6XlCj7ByDkx81XUHtoXUmi6F+3pl5k+k6nPYAcBOoA==
       tarball: 'file:projects/runway.tgz'
     version: 0.0.0
   'file:projects/sequence.tgz':
@@ -18684,7 +18664,7 @@ packages:
     dev: false
     name: '@rush-temp/server'
     resolution:
-      integrity: sha512-S2qVWqUg5ukW525zaEzWe45KXsq4DO7qgLczjuBn7QO+l+ROsDRilKQXPlt7gn+hOxfirJOYm49En+KIAvlcDg==
+      integrity: sha512-I8FeAHJthz2s1vH9EKmhtmW9YT5lZbZUbNVraoozLGwGrlC7J4ih/wwzbJ6qOlynze6/UMSt1xdnp2hosk/61A==
       tarball: 'file:projects/server.tgz'
     version: 0.0.0
   'file:projects/session-state.tgz':
@@ -18723,7 +18703,7 @@ packages:
     dev: false
     name: '@rush-temp/sqlite'
     resolution:
-      integrity: sha512-Xer753KNB+iQOF7inygdi2jF+xMrvZvNZtQwBRmBANvb7OgEuQd4ir3GsTw3/qsNLDPsm6jh8IyJSRfdXjknlA==
+      integrity: sha512-Y/8pgBRiqv3HnHgMFc1ruHmj3vgbAdpzjJgLocNnBSgVo1JBgvI9HZNOXnwoaw34aUosKsf3o4OGyGSwZ0bwiA==
       tarball: 'file:projects/sqlite.tgz'
     version: 0.0.0
   'file:projects/sqljs.tgz':
@@ -18787,7 +18767,7 @@ packages:
     dev: false
     name: '@rush-temp/takeoff'
     resolution:
-      integrity: sha512-1/JXhEuKxJuiiA4wFBehh5xwn1oG1+9EfW1mtlu9GIzKBlEt0Mb8x3vUMsP8SRGDEUo7k47KfEcxI0hcCO8uvQ==
+      integrity: sha512-jIj090/XODPmdMOv9XrVcO+PcQlLajY8eJaPAHKx9qCpbTHHEajB8iq6YJhXCpWrHF7X3G3+V88RWcndzvG0ew==
       tarball: 'file:projects/takeoff.tgz'
     version: 0.0.0
   'file:projects/tarmaq-dao.tgz':
@@ -18929,7 +18909,7 @@ packages:
     dev: false
     name: '@rush-temp/terminal'
     resolution:
-      integrity: sha512-SIJ2lU9TPPuKDdGzXr1W7xvNlF6CW/+PlbtKmh1ol0zTIRIwt6cK1RvK+kxteSYP42N3WQcmWy4bgADTZ153GA==
+      integrity: sha512-9v8GN1LMBe5N0L+SBKNG7eE6o8Ym/cGO6UVDEsB94g618Q3nGFIfS2f0R+C2LjFRieIlE/xUQjGEakstl+4XZA==
       tarball: 'file:projects/terminal.tgz'
     version: 0.0.0
   'file:projects/topics.tgz':
@@ -19305,7 +19285,7 @@ packages:
     dev: false
     name: '@rush-temp/web-terminal'
     resolution:
-      integrity: sha512-+sdphei8IxvXUIhl7oPdT+w7RjvTyDwjvboeKu1VB7FP1LuzsNt0hAZQ3TH1dYWPNKqGKiy1t06hOz6dGcTDvg==
+      integrity: sha512-QWfg+39qO7Fy57Az9YrHlbHmkDGGE3f+dCcCGDRPNafYDMoHIb51RxUlONvwwLkxZ00jFMKTEQOW5KBneIWMNQ==
       tarball: 'file:projects/web-terminal.tgz'
     version: 0.0.0
   'file:projects/web-tower.tgz':
@@ -19327,7 +19307,7 @@ packages:
     dev: false
     name: '@rush-temp/web-tower'
     resolution:
-      integrity: sha512-yeEGB6afak7pUp2xTrtxH00gUmFIHHwCqqVhNxgaNhW+JTMOiK4/IqOJBRyyEzDr601B6Khnj1VBITYQshuBrw==
+      integrity: sha512-UfcFPzI4e5ndz9fiEQE7vNIajz3YYAUh+UZMvxpQRAqXsSXRpRuw43H8Jm4m2jF/BwEe2dx98xxjs2+9XqJjXw==
       tarball: 'file:projects/web-tower.tgz'
     version: 0.0.0
 registry: ''
@@ -19381,7 +19361,6 @@ specifiers:
   '@rush-temp/holding-pattern': 'file:./projects/holding-pattern.tgz'
   '@rush-temp/in-memory-server': 'file:./projects/in-memory-server.tgz'
   '@rush-temp/keyring': 'file:./projects/keyring.tgz'
-  '@rush-temp/landing': 'file:./projects/landing.tgz'
   '@rush-temp/layover': 'file:./projects/layover.tgz'
   '@rush-temp/mysql': 'file:./projects/mysql.tgz'
   '@rush-temp/postgres': 'file:./projects/postgres.tgz'

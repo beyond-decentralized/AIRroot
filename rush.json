@@ -72,11 +72,6 @@
     },
     // "./AIRport/generators" folder (alphabetical order)
     {
-      "packageName": "@airport/landing",
-      "projectFolder": "./AIRport/generators/landing",
-      "shouldPublish": true
-    },
-    {
       "packageName": "@airport/runway",
       "projectFolder": "./AIRport/generators/runway",
       "shouldPublish": true
