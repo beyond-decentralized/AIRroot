@@ -15,8 +15,7 @@ const airportFirstStageBuild = {
         'libs/airgate',
         'libs/pressurization',
         'libs/vhf-radio',
-        'libs/autopilot',
-        'libs/flight-number'
+        'libs/autopilot'
     ]
 }
 
@@ -46,6 +45,7 @@ const airportSecondStageBuild = {
         'schemas/final-approach',
         'schemas/flight-recorder',
         'schemas/layover',
+        'libs/flight-number',
         'engines/tower',
         'libs/fuel-hydrant-system',
         'libs/session-state',
