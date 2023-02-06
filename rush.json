@@ -213,11 +213,6 @@
     // "./AIRport/UIs" folder (alphabetical order)
     // "AIRbridge" folder (external)
     {
-      "packageName": "@airbridge/blockchain",
-      "projectFolder": "./AIRbridge/blockchain",
-      "shouldPublish": true
-    },
-    {
       "packageName": "@airbridge/data-model",
       "projectFolder": "./AIRbridge/data-model",
       "shouldPublish": true
