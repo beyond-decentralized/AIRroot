@@ -10,12 +10,7 @@ const airportFirstStageBuild = {
         'ORMs/tarmaq/entity',
         'ORMs/tarmaq/query',
         'ORMs/tarmaq/dao',
-        'apis/air-traffic-control',
-        'apis/terminal-map',
-        'libs/airgate',
-        'libs/pressurization',
-        'libs/vhf-radio',
-        'libs/autopilot'
+        'apis/air-traffic-control'
     ]
 }
 
@@ -38,6 +33,11 @@ const airbridgeFirstStageBuild = {
 const airportSecondStageBuild = {
     project: 'AIRport',
     componentsInBuildOrder: [
+        'apis/terminal-map',
+        'libs/airgate',
+        'libs/pressurization',
+        'libs/vhf-radio',
+        'libs/autopilot',
         'schemas/airport-code',
         'schemas/airspace',
         'schemas/travel-document-checkpoint',
