@@ -33,7 +33,6 @@ dependencies:
   '@rush-temp/api': 'file:projects/api.tgz'
   '@rush-temp/autopilot': 'file:projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:projects/aviation-communication.tgz'
-  '@rush-temp/blockchain': 'file:projects/blockchain.tgz'
   '@rush-temp/blueprint': 'file:projects/blueprint.tgz'
   '@rush-temp/client': 'file:projects/client.tgz'
   '@rush-temp/conversations': 'file:projects/conversations.tgz'
@@ -18185,26 +18184,6 @@ packages:
       integrity: sha512-QaEGiGMwxrv+dhEfokVZBE8s94velc5qiAyEDqtUkC19r2OXLqQWHKX0SP9EgL3h0Q0vvlU10Ni8M0pv0VOQiw==
       tarball: 'file:projects/aviation-communication.tgz'
     version: 0.0.0
-  'file:projects/blockchain.tgz':
-    dependencies:
-      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
-      rollup: 2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
-      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
-      rxjs: 7.4.0
-      ts-node: 10.9.1_typescript@4.9.4
-      ts-patch: 2.1.0_typescript@4.9.4
-      tslib: 2.4.1
-      typescript: 4.9.4
-    dev: false
-    name: '@rush-temp/blockchain'
-    resolution:
-      integrity: sha512-tBFyjIq2zTHKb7J4CTBYMSAZewzk5g9crgusLNow8PxmK2Idn+KcrTqQAUZnFJeW7xmeZTL3HoxyMNnZcuA9iw==
-      tarball: 'file:projects/blockchain.tgz'
-    version: 0.0.0
   'file:projects/blueprint.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
@@ -18346,7 +18325,7 @@ packages:
     dev: false
     name: '@rush-temp/flight-number'
     resolution:
-      integrity: sha512-M2iZI3Iw+EvEB+dsTK3e+82Cz5Ob0yKvrGn14HOlyrNOpyGc1Ne02qd0FaPCsLIoxyK5H5PybIDiqTLCjC0I8A==
+      integrity: sha512-+d1ZBSR4s0TWwpdLFYCzoN7RaLhVoXYZWgrjm5BLydgYQjwaHt02y/bHrwsvz6TFqW3ygZl/4ZXfX8uaGFrLyQ==
       tarball: 'file:projects/flight-number.tgz'
     version: 0.0.0
   'file:projects/flight-recorder.tgz':
@@ -19346,7 +19325,6 @@ specifiers:
   '@rush-temp/api': 'file:./projects/api.tgz'
   '@rush-temp/autopilot': 'file:./projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:./projects/aviation-communication.tgz'
-  '@rush-temp/blockchain': 'file:./projects/blockchain.tgz'
   '@rush-temp/blueprint': 'file:./projects/blueprint.tgz'
   '@rush-temp/client': 'file:./projects/client.tgz'
   '@rush-temp/conversations': 'file:./projects/conversations.tgz'
