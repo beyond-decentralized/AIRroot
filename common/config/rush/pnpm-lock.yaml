@@ -40,7 +40,6 @@ dependencies:
   '@rush-temp/direction-indicator': 'file:projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:projects/flight-number.tgz'
-  '@rush-temp/flight-recorder': 'file:projects/flight-recorder.tgz'
   '@rush-temp/fuel-hydrant-system': 'file:projects/fuel-hydrant-system.tgz'
   '@rush-temp/ground-control': 'file:projects/ground-control.tgz'
   '@rush-temp/ground-transport': 'file:projects/ground-transport.tgz'
@@ -18200,7 +18199,7 @@ packages:
     dev: false
     name: '@rush-temp/blueprint'
     resolution:
-      integrity: sha512-4IEvoKdquiI02u1xfEJC3KeKTCX86LBpnphONDOsTmiwWMsEFZJhbxFQU/2ZNoYfyAETquvGGpi46tZTQ43aVA==
+      integrity: sha512-ME1djuMn7ElSFoDr7wi980NiafRq9CPSQwmXZ+ZsuCTui4s6jovaxwvs5meASWo7LpQfi0H2XJN4PFRLQdcatg==
       tarball: 'file:projects/blueprint.tgz'
     version: 0.0.0
   'file:projects/client.tgz':
@@ -18327,26 +18326,6 @@ packages:
     resolution:
       integrity: sha512-+d1ZBSR4s0TWwpdLFYCzoN7RaLhVoXYZWgrjm5BLydgYQjwaHt02y/bHrwsvz6TFqW3ygZl/4ZXfX8uaGFrLyQ==
       tarball: 'file:projects/flight-number.tgz'
-    version: 0.0.0
-  'file:projects/flight-recorder.tgz':
-    dependencies:
-      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
-      rollup: 2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
-      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
-      ts-node: 10.9.1_typescript@4.9.4
-      ts-patch: 2.1.0_typescript@4.9.4
-      tslib: 2.4.1
-      typescript: 4.9.4
-      uuid: 8.3.2
-    dev: false
-    name: '@rush-temp/flight-recorder'
-    resolution:
-      integrity: sha512-eABC84I3xq+JG22/Pvr1D/zkyyQ8a3EOG6fKCHlZLy56faiwwJEJV6pBVcu6bK1X5tM1G9MCmzeE1k0fL9b4nQ==
-      tarball: 'file:projects/flight-recorder.tgz'
     version: 0.0.0
   'file:projects/fuel-hydrant-system.tgz':
     dependencies:
@@ -18888,7 +18867,7 @@ packages:
     dev: false
     name: '@rush-temp/terminal'
     resolution:
-      integrity: sha512-9v8GN1LMBe5N0L+SBKNG7eE6o8Ym/cGO6UVDEsB94g618Q3nGFIfS2f0R+C2LjFRieIlE/xUQjGEakstl+4XZA==
+      integrity: sha512-vJgiydDFhVyxFK8SedzPd0NUyqX3oZMGkcZ5/Pmr0QgVaHHbYfqkPyvb7HCjAtWraBy4rFj1XDvFkaNmdSs/BQ==
       tarball: 'file:projects/terminal.tgz'
     version: 0.0.0
   'file:projects/topics.tgz':
@@ -19332,7 +19311,6 @@ specifiers:
   '@rush-temp/direction-indicator': 'file:./projects/direction-indicator.tgz'
   '@rush-temp/final-approach': 'file:./projects/final-approach.tgz'
   '@rush-temp/flight-number': 'file:./projects/flight-number.tgz'
-  '@rush-temp/flight-recorder': 'file:./projects/flight-recorder.tgz'
   '@rush-temp/fuel-hydrant-system': 'file:./projects/fuel-hydrant-system.tgz'
   '@rush-temp/ground-control': 'file:./projects/ground-control.tgz'
   '@rush-temp/ground-transport': 'file:./projects/ground-transport.tgz'

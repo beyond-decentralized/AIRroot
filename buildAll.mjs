@@ -43,7 +43,6 @@ const airportSecondStageBuild = {
         'schemas/travel-document-checkpoint',
         'schemas/holding-pattern',
         'schemas/final-approach',
-        'schemas/flight-recorder',
         'schemas/layover',
         'libs/flight-number',
         'engines/tower',

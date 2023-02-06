@@ -191,11 +191,6 @@
       "shouldPublish": true
     },
     {
-      "packageName": "@airport/flight-recorder",
-      "projectFolder": "./AIRport/schemas/flight-recorder",
-      "shouldPublish": true
-    },
-    {
       "packageName": "@airport/holding-pattern",
       "projectFolder": "./AIRport/schemas/holding-pattern",
       "shouldPublish": true
