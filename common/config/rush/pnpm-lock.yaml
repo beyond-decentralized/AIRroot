@@ -103,6 +103,7 @@ dependencies:
   camelcase: 6.3.0
   case-sensitive-paths-webpack-plugin: 2.4.0
   cassandra-driver: 4.6.4
+  cross-env: 7.0.3
   css-loader: 6.7.3_webpack@5.75.0
   css-minimizer-webpack-plugin: 3.4.1_webpack@5.75.0
   dotenv: 10.0.0
@@ -7317,6 +7318,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JwjgmO6i3y6RWtLYmXwO5jMd+maZt8Tnfu7VVISmEWyQqfLpB8soBswf8/2bu6SBXxtKA68Al3c+qIG1ApT68A==
+  /cross-env/7.0.3:
+    dependencies:
+      cross-spawn: 7.0.3
+    dev: false
+    engines:
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
+    hasBin: true
+    resolution:
+      integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
   /cross-spawn/7.0.3:
     dependencies:
       path-key: 3.1.1
@@ -19071,6 +19083,7 @@ packages:
       browserslist: 4.21.4_browserslist@4.21.4
       camelcase: 6.3.0
       case-sensitive-paths-webpack-plugin: 2.4.0
+      cross-env: 7.0.3
       css-loader: 6.7.3_webpack@5.75.0
       css-minimizer-webpack-plugin: 3.4.1_webpack@5.75.0
       dotenv: 10.0.0
@@ -19134,7 +19147,7 @@ packages:
     peerDependencies:
       ts-node: '*'
     resolution:
-      integrity: sha512-yBu8mvCEGCKW7qptYGYGEaMqc0p7ZPR9pQh0dWJJQEreELr748wdpczz+zsl67rcE8d1qgXNNeyEZ7xlcP8iyw==
+      integrity: sha512-sfCmwmbBWGpNn9LMvJK7G+OBepKWeQzNjH17nYb5GCFTsZuAOOASefRkMPHWmQuWnzMybYmruuSmLKvHrnz7dg==
       tarball: 'file:projects/ui-react-main.tgz'
     version: 0.0.0
   'file:projects/ui-svelte-main.tgz_f5125a430752a2fa1e687e96f15521c9':
@@ -19354,6 +19367,7 @@ specifiers:
   camelcase: ^6.2.1
   case-sensitive-paths-webpack-plugin: ^2.4.0
   cassandra-driver: ^4.6.3
+  cross-env: ^7.0.3
   css-loader: ^6.5.1
   css-minimizer-webpack-plugin: ^3.2.0
   dotenv: ^10.0.0
