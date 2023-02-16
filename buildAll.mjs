@@ -70,7 +70,6 @@ const airportThirdStageBuild = {
         'generators/runway',
         'databases/sqlite',
         'databases/sqljs',
-        'platforms/api',
         'platforms/server',
         'platforms/web-tower',
         'platforms/web-terminal',

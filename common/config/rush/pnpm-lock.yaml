@@ -30,7 +30,6 @@ dependencies:
   '@rush-temp/airport-code': 'file:projects/airport-code.tgz'
   '@rush-temp/airroot': 'file:projects/airroot.tgz'
   '@rush-temp/airspace': 'file:projects/airspace.tgz'
-  '@rush-temp/api': 'file:projects/api.tgz'
   '@rush-temp/autopilot': 'file:projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:projects/aviation-communication.tgz'
   '@rush-temp/blueprint': 'file:projects/blueprint.tgz'
@@ -18125,25 +18124,6 @@ packages:
       integrity: sha512-JMdA/VfDeU7Hr3tzrWIUXV+OYjX1VYxXEW/06arJQtt/2U9cgdT7hZmNZ26oxOXv8JpRIFXGk53Q4A6LeH4itg==
       tarball: 'file:projects/airspace.tgz'
     version: 0.0.0
-  'file:projects/api.tgz':
-    dependencies:
-      '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
-      '@rollup/plugin-node-resolve': 13.3.0_rollup@2.79.1
-      '@rollup/plugin-typescript': 8.5.0_rollup@2.79.1+typescript@4.9.4
-      rollup: 2.79.1
-      rollup-plugin-dts: 4.2.3_rollup@2.79.1+typescript@4.9.4
-      rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
-      rollup-plugin-terser: 7.0.2_rollup@2.79.1
-      rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
-      ts-node: 10.9.1_typescript@4.9.4
-      ts-patch: 2.1.0_typescript@4.9.4
-      typescript: 4.9.4
-    dev: false
-    name: '@rush-temp/api'
-    resolution:
-      integrity: sha512-2248faLGfD49O6ij1fXsi2xWXQ8+vliNl02AAF4mXjaC+LmM5cQ7DiymTVoVJvLptRZ9WDBHaBNnW+6Fm+SZyg==
-      tarball: 'file:projects/api.tgz'
-    version: 0.0.0
   'file:projects/autopilot.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 21.1.0_rollup@2.79.1
@@ -18622,7 +18602,7 @@ packages:
     dev: false
     name: '@rush-temp/server'
     resolution:
-      integrity: sha512-I8FeAHJthz2s1vH9EKmhtmW9YT5lZbZUbNVraoozLGwGrlC7J4ih/wwzbJ6qOlynze6/UMSt1xdnp2hosk/61A==
+      integrity: sha512-cCCosQW4+5c+3AOR5kCjgost/PQARTwGa6in3jk1gKtHnx+whiLVGDCX+08h3OG7jLsalVRENGcnJnKHcK2x7Q==
       tarball: 'file:projects/server.tgz'
     version: 0.0.0
   'file:projects/session-state.tgz':
@@ -19301,7 +19281,6 @@ specifiers:
   '@rush-temp/airport-code': 'file:./projects/airport-code.tgz'
   '@rush-temp/airroot': 'file:./projects/airroot.tgz'
   '@rush-temp/airspace': 'file:./projects/airspace.tgz'
-  '@rush-temp/api': 'file:./projects/api.tgz'
   '@rush-temp/autopilot': 'file:./projects/autopilot.tgz'
   '@rush-temp/aviation-communication': 'file:./projects/aviation-communication.tgz'
   '@rush-temp/blueprint': 'file:./projects/blueprint.tgz'
