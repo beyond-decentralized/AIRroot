@@ -584,10 +584,10 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     resolution:
       integrity: sha512-0x/2IhaetJqfXMeQ4DlRnOTzGWD0OvOeKORyi0q7WXPxSoD9MUezQHGmzkc5lK9tDYE9cNYyQfkUBcbJT/k6MA==
-  /@angular/common/15.0.4_@angular+core@15.0.4+rxjs@6.6.7:
+  /@angular/common/15.0.4_@angular+core@15.0.4+rxjs@7.8.0:
     dependencies:
-      '@angular/core': 15.0.4_rxjs@6.6.7+zone.js@0.12.0
-      rxjs: 6.6.7
+      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
+      rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
     engines:
@@ -656,9 +656,9 @@ packages:
         optional: true
     resolution:
       integrity: sha512-KtxgRJUGZamOXpIILFG2FTUW+bbc2phi/o6955/Q4LR1HOICQrYEy8PrT1Gp+lVXFKgDG+6cb01lH14LoBQvyw==
-  /@angular/core/15.0.4_rxjs@6.6.7+zone.js@0.12.0:
+  /@angular/core/15.0.4_rxjs@7.8.0+zone.js@0.12.0:
     dependencies:
-      rxjs: 6.6.7
+      rxjs: 7.8.0
       tslib: 2.4.1
       zone.js: 0.12.0
     dev: false
@@ -697,12 +697,12 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     resolution:
       integrity: sha512-3Ft/p2ug/zp2p0g2rhLq9v/5F1G11xa+YujAKL5kOFa0zUoroDG6n4b6VEcsGWmDE9NR7Vkiys9rHckiJUluHg==
-  /@angular/forms/15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8:
+  /@angular/forms/15.0.4_ba9eb31db390a829667586dff224ebd9:
     dependencies:
-      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@6.6.7
-      '@angular/core': 15.0.4_rxjs@6.6.7+zone.js@0.12.0
+      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@7.8.0
+      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
       '@angular/platform-browser': 15.0.4_0dacf5c1be2a9acdc88cc30b05d6dd0b
-      rxjs: 6.6.7
+      rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
     engines:
@@ -771,12 +771,12 @@ packages:
       rxjs: ^6.5.3 || ^7.4.0
     resolution:
       integrity: sha512-6cBUu1kSigORGpWq+Wc3hTLRQcJvtlaZ5OFOIzKGiBEPgezn/AzrWHi/bEccWLZAVFhbUOhcRn9GwudqiqX6+A==
-  /@angular/router/15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8:
+  /@angular/router/15.0.4_ba9eb31db390a829667586dff224ebd9:
     dependencies:
-      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@6.6.7
-      '@angular/core': 15.0.4_rxjs@6.6.7+zone.js@0.12.0
+      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@7.8.0
+      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
       '@angular/platform-browser': 15.0.4_0dacf5c1be2a9acdc88cc30b05d6dd0b
-      rxjs: 6.6.7
+      rxjs: 7.8.0
       tslib: 2.4.1
     dev: false
     engines:
@@ -3845,14 +3845,23 @@ packages:
     dev: false
     resolution:
       integrity: sha512-9nVeGuGRO3sUYSVzcHmddPd9+C+XDW2BpRSxCqMK1MKLlfnnpVMP1TTf/IDQhBj+koHwBAQBj6voBSsFUzTKBg==
-  /@ionic/angular/6.4.1_80228eed4f1451bb2f672072c968036d:
+  /@ionic/angular-toolkit/8.0.0:
     dependencies:
-      '@angular/core': 15.0.4_zone.js@0.12.0
-      '@angular/forms': 15.0.4_296ccc26ddd732d448d2a406290f1980
-      '@angular/router': 15.0.4_296ccc26ddd732d448d2a406290f1980
+      '@angular-devkit/core': 15.0.4
+      '@angular-devkit/schematics': 15.0.4
+      '@schematics/angular': 15.0.4
+    dev: false
+    resolution:
+      integrity: sha512-IAAmU/0cHQkzxOaLdBUZ6NViroye4x5qRrelqRPSdoCSq4BIctw70j7VyH1F0RDFSQACry4h9ZDM3PAvqQ+PIg==
+  /@ionic/angular/6.4.1_44b03c510fe584312fe32a077eb831a6:
+    dependencies:
+      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.0.4_ba9eb31db390a829667586dff224ebd9
+      '@angular/router': 15.0.4_ba9eb31db390a829667586dff224ebd9
       '@ionic/core': 6.4.1
       ionicons: 6.0.4
       jsonc-parser: 3.2.0
+      rxjs: 7.8.0
       tslib: 2.4.1
       zone.js: 0.12.0
     dev: false
@@ -3864,15 +3873,14 @@ packages:
       zone.js: '>=0.11.0'
     resolution:
       integrity: sha512-7WAkydpbEIzUTJac+sOZ3JQE8OATAMHRdSmDpBdEsErP0mT32hPZKhBB0NguU0MFLXKc1C3HOks1aoEryMm2ig==
-  /@ionic/angular/6.4.1_86a0a9fef528f60be3c816b8a1f991e0:
+  /@ionic/angular/6.4.1_80228eed4f1451bb2f672072c968036d:
     dependencies:
-      '@angular/core': 15.0.4_rxjs@6.6.7+zone.js@0.12.0
-      '@angular/forms': 15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8
-      '@angular/router': 15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8
+      '@angular/core': 15.0.4_zone.js@0.12.0
+      '@angular/forms': 15.0.4_296ccc26ddd732d448d2a406290f1980
+      '@angular/router': 15.0.4_296ccc26ddd732d448d2a406290f1980
       '@ionic/core': 6.4.1
       ionicons: 6.0.4
       jsonc-parser: 3.2.0
-      rxjs: 6.6.7
       tslib: 2.4.1
       zone.js: 0.12.0
     dev: false
@@ -3961,6 +3969,40 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-xQoLQAHvWiBtvNFZ8f4EimtCaSbNtwKe8dCHMozFjfJx6RbfCXzPFj8H1IJGGYLjFihoxRu8p4RZsY7lvE/o7A==
+  /@ionic/cli/6.20.8:
+    dependencies:
+      '@ionic/cli-framework': 5.1.3
+      '@ionic/cli-framework-output': 2.2.5
+      '@ionic/cli-framework-prompts': 2.1.10
+      '@ionic/utils-array': 2.1.5
+      '@ionic/utils-fs': 3.1.6
+      '@ionic/utils-network': 2.1.5
+      '@ionic/utils-process': 2.1.10
+      '@ionic/utils-stream': 3.1.5
+      '@ionic/utils-subprocess': 2.1.11
+      '@ionic/utils-terminal': 2.3.3
+      chalk: 4.1.2
+      debug: 4.3.4
+      diff: 4.0.2
+      elementtree: 0.1.7
+      leek: 0.0.24
+      lodash: 4.17.21
+      open: 7.4.2
+      os-name: 4.0.1
+      semver: 7.3.8
+      split2: 3.2.2
+      ssh-config: 1.1.6
+      stream-combiner2: 1.1.1
+      superagent: 5.3.1
+      superagent-proxy: 3.0.0_superagent@5.3.1
+      tar: 6.1.13
+      tslib: 2.4.1
+    dev: false
+    engines:
+      node: '>=10.3.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-xoV1mKP2FMtO6WoPbcwKFR6ex1wCqX4iv6zspHKJrY/A7dtwzaPHd2ORInOcbElS05SWBmF5FKt1Yyz1MgvTCg==
   /@ionic/core/6.4.1:
     dependencies:
       '@stencil/core': 2.20.0
@@ -18327,7 +18369,7 @@ packages:
     dev: false
     name: '@rush-temp/fuel-hydrant-system'
     resolution:
-      integrity: sha512-093bO+nsi5f2H53xN7Qr4mWjk6MKJjK+8CvIr/4ZJaKJB1tdmyruCw5dVwAjsuBHitWRxqRjbOJD9gjOGXDLDQ==
+      integrity: sha512-0X6xNx8HRPu1dGoYqKCKIi4HCXP8mSqIbB5r36gBKRgmoHNLOTXZgnLy3eS5/UlmTr8bhMJrC3tFP8PQJ4vqmw==
       tarball: 'file:projects/fuel-hydrant-system.tgz'
     version: 0.0.0
   'file:projects/ground-control.tgz':
@@ -18784,6 +18826,7 @@ packages:
       rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.1
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
       rollup-plugin-typescript2: 0.33.0_rollup@2.79.1+typescript@4.9.4
+      rxjs: 7.8.0
       ts-node: 10.9.1_typescript@4.9.4
       ts-patch: 2.1.0_typescript@4.9.4
       tslib: 2.4.1
@@ -18791,7 +18834,7 @@ packages:
     dev: false
     name: '@rush-temp/tasks'
     resolution:
-      integrity: sha512-kP+gCGbYa7L4SLcDJGouQ9xQZVKsqEaHoow0VfbUqDLg3IWiWn4ZDcQjQanR+uehtU3dFgBPVMv+tsSzSjbFPw==
+      integrity: sha512-Q17J7mb9AufDWdVmwl8mrwgx4RjudDeemz4LEsLJHUPj4Z7bnwLQ7Mf5k8FBnKthOlKeNg8dyECkQuI7LOHQ3A==
       tarball: 'file:projects/tasks.tgz'
     version: 0.0.0
   'file:projects/taxiway.tgz':
@@ -18959,15 +19002,15 @@ packages:
       '@angular-devkit/build-angular': 15.0.4_783b36cf923b63a5826af7e75066108c
       '@angular/animations': 15.0.4_@angular+core@15.0.4
       '@angular/cli': 15.0.4
-      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@6.6.7
+      '@angular/common': 15.0.4_@angular+core@15.0.4+rxjs@7.8.0
       '@angular/compiler': 15.0.4_@angular+core@15.0.4
       '@angular/compiler-cli': 15.0.4_259ba8a17f3a1691a4154f0a7aa6ee54
-      '@angular/core': 15.0.4_rxjs@6.6.7+zone.js@0.12.0
-      '@angular/forms': 15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8
+      '@angular/core': 15.0.4_rxjs@7.8.0+zone.js@0.12.0
+      '@angular/forms': 15.0.4_ba9eb31db390a829667586dff224ebd9
       '@angular/language-service': 15.0.4
       '@angular/platform-browser': 15.0.4_0dacf5c1be2a9acdc88cc30b05d6dd0b
       '@angular/platform-browser-dynamic': 15.0.4_3b5beaed9fbbcb6c76d433b35a4e12c2
-      '@angular/router': 15.0.4_9f42b135a2ca19fbe48bbc53aa168dd8
+      '@angular/router': 15.0.4_ba9eb31db390a829667586dff224ebd9
       '@babel/runtime': 7.20.6
       '@capacitor/app': 4.1.1_@capacitor+core@4.6.1
       '@capacitor/cli': 4.6.1
@@ -18975,9 +19018,9 @@ packages:
       '@capacitor/haptics': 4.1.0_@capacitor+core@4.6.1
       '@capacitor/keyboard': 4.1.0_@capacitor+core@4.6.1
       '@capacitor/status-bar': 4.1.1_@capacitor+core@4.6.1
-      '@ionic/angular': 6.4.1_86a0a9fef528f60be3c816b8a1f991e0
-      '@ionic/angular-toolkit': 7.0.0
-      '@ionic/cli': 6.20.6
+      '@ionic/angular': 6.4.1_44b03c510fe584312fe32a077eb831a6
+      '@ionic/angular-toolkit': 8.0.0
+      '@ionic/cli': 6.20.8
       '@ionic/core': 6.4.1
       '@types/jasmine': 4.3.1
       '@types/node': 18.11.17
@@ -18989,7 +19032,7 @@ packages:
       karma-jasmine: 5.1.0_karma@6.4.1
       karma-jasmine-html-reporter: 2.0.0_a2bcbe746b92563934a66817c74ce6c4
       ng-packagr: 15.0.3_5e945a6675e8f5366ac9a3850f4b15d0
-      rxjs: 6.6.7
+      rxjs: 7.8.0
       tslib: 2.4.1
       typescript: 4.8.4
       zone.js: 0.12.0
@@ -19000,7 +19043,7 @@ packages:
       html-webpack-plugin: '*'
       tailwindcss: '*'
     resolution:
-      integrity: sha512-QcTgZtZGBXThjlJxMBSZg8Dg9l1kjPwwodRY4LcocAMGs6gCISEwartAobHGvH7FeZ6sj5e/XoqKS/nuASKG5A==
+      integrity: sha512-S2IerTHD9aIKOouGfbbUOPGKCKof/ymBorXGvhGtfpns30hAS5NfLvDtbQwZQrjmWAuBfd4WXljzSE8KsEsEZg==
       tarball: 'file:projects/ui-angular.tgz'
     version: 0.0.0
   'file:projects/ui-react-components.tgz_postcss@8.4.20+ts-node@10.9.1':
