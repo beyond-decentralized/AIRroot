@@ -1,4 +1,4 @@
-import { execute, executeInProjects } from './common.mjs'
+import { executeInProjects } from './common.mjs'
 import {
     airportFirstStageBuild,
     airwayBuild,
@@ -6,39 +6,26 @@ import {
     airportSecondStageBuild,
     airbridgeSecondStageBuild,
     airportThirdStageBuild,
+    airlineBuild,
     airportReactUiBuild,
-    airlineBuild
+    airlineAngularUiBuild
 } from './projects.mjs'
 
 try {
-    await execute('rm', ['-rf', 'node_modules'], '.')
-
     await cleanPeerProjects(airportFirstStageBuild)
     await cleanPeerProjects(airwayBuild)
     await cleanPeerProjects(airbridgeFirstStageBuild)
     await cleanPeerProjects(airportSecondStageBuild)
     await cleanPeerProjects(airbridgeSecondStageBuild)
     await cleanPeerProjects(airportThirdStageBuild)
-    await cleanUI(airportReactUiBuild)
     await cleanPeerProjects(airlineBuild)
+    await cleanPeerProjects(airportReactUiBuild)
+    await cleanPeerProjects(airlineAngularUiBuild)
 } catch (e) {
     console.log(e)
 }
 
 async function cleanPeerProjects(
-    stageDescriptor
-) {
-    process.chdir('./' + stageDescriptor.project);
-
-    await executeInProjects(
-        stageDescriptor.componentsInBuildOrder,
-        'rm', ['-rf', 'node_modules']
-    );
-
-    process.chdir('..');
-}
-
-async function cleanUI(
     stageDescriptor
 ) {
     process.chdir('./' + stageDescriptor.project);

@@ -90,3 +90,9 @@ export async function execute(
     })
 
 }
+
+export async function wireInDependencies(
+    locationDir
+) {
+    await execute('pnpm', ['i'], locationDir)
+}

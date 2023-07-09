@@ -91,3 +91,11 @@ export const airlineBuild = {
         'apps/tasks',
     ]
 }
+
+export const airlineAngularUiBuild = {
+    project: 'AIRline',
+    uiType: 'Angular',
+    componentsInBuildOrder: [
+        'UIs/angular'
+    ]
+}

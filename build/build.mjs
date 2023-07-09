@@ -1,4 +1,6 @@
-import { execute, executeInProjects } from './common.mjs'
+import {
+    executeInProjects,
+} from './common.mjs'
 import {
     airportFirstStageBuild,
     airwayBuild,
@@ -7,28 +9,27 @@ import {
     airbridgeSecondStageBuild,
     airportThirdStageBuild,
     airportReactUiBuild,
-    airlineBuild
+    airlineBuild,
+    airlineAngularUiBuild
 } from './projects.mjs'
 
 try {
-    await wireInDependencies('.')
-
-    await execute('pnpm', ['run', 'build'], '.')
-
     await buildPeerProjects(airportFirstStageBuild)
     await buildPeerProjects(airwayBuild)
     await buildPeerProjects(airbridgeFirstStageBuild)
     await buildPeerProjects(airportSecondStageBuild)
     await buildPeerProjects(airbridgeSecondStageBuild)
     await buildPeerProjects(airportThirdStageBuild)
-    await buildUI(airportReactUiBuild)
+    await buildPeerProjects(airportReactUiBuild)
     await buildPeerProjects(airlineBuild)
+    await buildPeerProjects(airlineAngularUiBuild, false)
 } catch (e) {
     console.log(e)
 }
 
 async function buildPeerProjects(
-    stageDescriptor
+    stageDescriptor,
+    build = true
 ) {
     process.chdir('./' + stageDescriptor.project);
 
@@ -37,29 +38,12 @@ async function buildPeerProjects(
         'pnpm', ['i']
     );
 
-    await executeInProjects(
-        stageDescriptor.componentsInBuildOrder,
-        'pnpm', ['run', 'build']
-    );
+    if (build) {
+        await executeInProjects(
+            stageDescriptor.componentsInBuildOrder,
+            'pnpm', ['run', 'build']
+        );
+    }
 
     process.chdir('..');
-}
-
-async function buildUI(
-    stageDescriptor
-) {
-    process.chdir('./' + stageDescriptor.project);
-
-    await executeInProjects(
-        stageDescriptor.componentsInBuildOrder,
-        'pnpm', ['run', 'build']
-    );
-
-    process.chdir('..');
-}
-
-async function wireInDependencies(
-    locationDir
-) {
-    await execute('pnpm', ['i'], locationDir)
 }
