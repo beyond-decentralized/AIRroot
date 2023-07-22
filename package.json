@@ -7,9 +7,9 @@
         "addDeps": "node build/addDependencies.mjs",
         "addExternalDeps": "node build/addExternalDependencies.mjs",
         "build": "node build/build.mjs",
-        "setupNBuild": "pnpm addExternalDeps & pnpm tsPatch & pnpm build",
         "cleanDeps": "node build/cleanDependencies.mjs",
         "cleanExternalDeps": "node build/cleanExternalDependencies.mjs",
+        "setup": "pnpm addExternalDeps & pnpm tsPatch",
         "tsPatch": "ts-patch install -s"
     },
     "repository": {
@@ -93,8 +93,10 @@
         "react-dom": "^18.2.0",
         "react-router": "^5.3.4",
         "react-router-dom": "^5.3.4",
+        "rimraf": "^5.0.1",
         "rollup": "^3.25.0",
         "rollup-plugin-copy": "^3.4.0",
+        "rollup-plugin-delete": "^2.0.0",
         "rollup-plugin-dts": "^5.3.0",
         "rollup-plugin-peer-deps-external": "^2.2.4",
         "rollup-plugin-postcss": "^4.0.2",
