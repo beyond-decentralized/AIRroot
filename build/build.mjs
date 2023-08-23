@@ -33,11 +33,6 @@ async function buildPeerProjects(
 ) {
     process.chdir('./' + stageDescriptor.project);
 
-    await executeInProjects(
-        stageDescriptor.componentsInBuildOrder,
-        'pnpm', ['i']
-    );
-
     if (build) {
         await executeInProjects(
             stageDescriptor.componentsInBuildOrder,

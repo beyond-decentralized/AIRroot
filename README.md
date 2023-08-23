@@ -9,7 +9,7 @@ All AIR projects share common libraries (mostly self defined) and it makes sense
 
 ## Build Directions:
 
-1 First checkout AIRroot
+1 First clone AIRroot
 
 2 Directly in AIRroot directory clone all other AIR projects:
 
@@ -20,5 +20,11 @@ All AIR projects share common libraries (mostly self defined) and it makes sense
 
 3 run:  
 
-* npm i -g @microsoft/rush
-* node buildAll.mjs
+* npm i -g pnpm
+* npm i -g typescript
+* pnpm addExternalDeps
+* pnpm addDeps
+* pnpm build
+
+Now should only have to re-run addExternalDeps if external dependencies where added or changed.
+Likewise you only have to run addDeps if internal dependencies where changed.
