@@ -4,13 +4,13 @@
     "description": "dependency management for all AIR projects",
     "license": "MIT & Apache 2.0",
     "scripts": {
-        "addDeps": "node build/addDependencies.mjs",
-        "addExternalDeps": "node build/addExternalDependencies.mjs",
+        "add-external-dependencies": "node build/addExternalDependencies.mjs",
         "build": "node build/build.mjs",
-        "cleanDeps": "node build/cleanDependencies.mjs",
-        "cleanExternalDeps": "node build/cleanExternalDependencies.mjs",
-        "setup": "pnpm addExternalDeps & pnpm tsPatch",
-        "tsPatch": "ts-patch install -s"
+        "clean-external-dependencies": "node build/cleanExternalDependencies.mjs",
+        "wire-dependencies": "node build/wireDependencies.mjs",
+        "ts-patch": "ts-patch install -s",
+        "unwire-dependencies": "node build/unwireDependencies.mjs"
+        
     },
     "repository": {
         "type": "git",
@@ -70,7 +70,6 @@
         "@vitejs/plugin-legacy": "^4.0.2",
         "@vitejs/plugin-react": "^4.0.1",
         "async": "^3.2.1",
-        "broadcast-channel": "^4.14.0",
         "cassandra-driver": "^4.6.3",
         "cypress": "^12.7.0",
         "eslint": "^8.35.0",

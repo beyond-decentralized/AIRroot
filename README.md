@@ -21,10 +21,14 @@ All AIR projects share common libraries (mostly self defined) and it makes sense
 3 run:  
 
 * npm i -g pnpm
-* npm i -g typescript
-* pnpm addExternalDeps
-* pnpm addDeps
+* pnpm add-external-dependencies
+* pnpm ts-patch
+* pnpm wire-dependencies
 * pnpm build
 
-Now should only have to re-run addExternalDeps if external dependencies where added or changed.
-Likewise you only have to run addDeps if internal dependencies where changed.
+
+
+Now should only have to re-run add-external-dependencies if external dependencies where added or changed.  You only need to re-run ts-patch if you are changing the different version
+of Typescript.
+
+Likewise you only have to run wire-dependencies if any of the dependencies (internal or external) where changed.
