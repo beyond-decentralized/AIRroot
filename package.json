@@ -6,10 +6,12 @@
     "scripts": {
         "add-external-dependencies": "node build/addExternalDependencies.mjs",
         "build": "node build/build.mjs",
+        "clean": "node build/clean.mjs",
         "clean-external-dependencies": "node build/cleanExternalDependencies.mjs",
-        "wire-dependencies": "node build/wireDependencies.mjs",
+        "clean-build": "node build/build.mjs clean",
         "ts-patch": "ts-patch install -s",
-        "unwire-dependencies": "node build/unwireDependencies.mjs"
+        "unwire-dependencies": "node build/unwireDependencies.mjs",
+        "wire-dependencies": "node build/wireDependencies.mjs"
         
     },
     "repository": {

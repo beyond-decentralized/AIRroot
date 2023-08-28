@@ -18,22 +18,17 @@ export async function executeInProjects(
         } else {
             throw `Expecting either object or string as a Project Descriptor.`
         }
-        const directoryDepth = projectDirectory.split('/');
+        const directoryDepth = projectDirectory.split('/')
         let navigateBackPath = '..'
         for (let i = 1; i < directoryDepth.length; i++) {
             navigateBackPath = '../' + navigateBackPath
         }
         // console.log(`Changing directory to: ./${projectDirectory}`)
-        process.chdir('./' + projectDirectory);
-
-        // if (isApp) {
-        //     await execute('node', ['generate.mjs'], projectDirectory);
-        // }
-
+        process.chdir('./' + projectDirectory)
 
         await execute(command, parameters, projectDirectory)
 
-        process.chdir(navigateBackPath);
+        process.chdir(navigateBackPath)
     };
 }
 
@@ -58,7 +53,7 @@ export async function execute(
     
         `)
 
-        const runCommand = spawn(command, parameters);
+        const runCommand = spawn(command, parameters)
 
         runCommand.stdout.on("data", data => {
             console.log(`${data}`)
@@ -69,7 +64,7 @@ export async function execute(
         });
 
         runCommand.on('error', (error) => {
-            console.log(`${error.message}`);
+            console.log(`${error.message}`)
         });
 
         runCommand.on("close", code => {

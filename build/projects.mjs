@@ -34,7 +34,6 @@ export const airportSecondStageBuild = {
         'apis/terminal-map',
         'libs/airgate',
         'libs/pressurization',
-        'libs/vhf-radio',
         'libs/autopilot',
         'schemas/airport-code',
         'schemas/airspace',

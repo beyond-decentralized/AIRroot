@@ -1,3 +1,4 @@
+import Os from 'os'
 import { executeInProjects } from './common.mjs'
 import {
     airportFirstStageBuild,
@@ -11,29 +12,41 @@ import {
     airlineAngularUiBuild
 } from './projects.mjs'
 
+function isWindows() {
+    return Os.platform() === 'win32'
+}
+
 try {
-    await cleanPeerProjects(airportFirstStageBuild)
-    await cleanPeerProjects(airwayBuild)
-    await cleanPeerProjects(airbridgeFirstStageBuild)
-    await cleanPeerProjects(airportSecondStageBuild)
-    await cleanPeerProjects(airbridgeSecondStageBuild)
-    await cleanPeerProjects(airportThirdStageBuild)
-    await cleanPeerProjects(airlineBuild)
-    await cleanPeerProjects(airportReactUiBuild)
-    await cleanPeerProjects(airlineAngularUiBuild)
+    await unwireProjectDependencies(airportFirstStageBuild)
+    await unwireProjectDependencies(airwayBuild)
+    await unwireProjectDependencies(airbridgeFirstStageBuild)
+    await unwireProjectDependencies(airportSecondStageBuild)
+    await unwireProjectDependencies(airbridgeSecondStageBuild)
+    await unwireProjectDependencies(airportThirdStageBuild)
+    await unwireProjectDependencies(airlineBuild)
+    await unwireProjectDependencies(airportReactUiBuild)
+    await unwireProjectDependencies(airlineAngularUiBuild)
 } catch (e) {
     console.log(e)
 }
 
-async function cleanPeerProjects(
+async function unwireProjectDependencies(
     stageDescriptor
 ) {
-    process.chdir('./' + stageDescriptor.project);
+    process.chdir('./' + stageDescriptor.project)
+
+    let removeCommand = 'rm'
+    let removeCommandOptions = ['-rf', 'node_modules']
+
+    if (isWindows()) {
+        removeCommand = 'rmdir'
+        removeCommandOptions = ['/S', '/Q', 'node_modules']
+    }
 
     await executeInProjects(
         stageDescriptor.componentsInBuildOrder,
-        'rm', ['-rf', 'node_modules']
+        removeCommand, removeCommandOptions
     );
 
-    process.chdir('..');
+    process.chdir('..')
 }

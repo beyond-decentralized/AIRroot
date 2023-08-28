@@ -28,12 +28,12 @@ try {
 async function addDependencies(
     stageDescriptor
 ) {
-    process.chdir('./' + stageDescriptor.project);
+    process.chdir('./' + stageDescriptor.project)
 
     await executeInProjects(
         stageDescriptor.componentsInBuildOrder,
         'pnpm', ['i']
-    );
+    )
 
-    process.chdir('..');
+    process.chdir('..')
 }

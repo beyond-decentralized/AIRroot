@@ -13,6 +13,12 @@ import {
     airlineAngularUiBuild
 } from './projects.mjs'
 
+let clean = false
+
+if (process.argv.length > 2 && process.argv[2] === 'clean') {
+    clean = true
+}
+
 try {
     await buildPeerProjects(airportFirstStageBuild)
     await buildPeerProjects(airwayBuild)
@@ -31,14 +37,15 @@ async function buildPeerProjects(
     stageDescriptor,
     build = true
 ) {
-    process.chdir('./' + stageDescriptor.project);
+    process.chdir('./' + stageDescriptor.project)
 
     if (build) {
+        let command = clean ? 'clean-build' : 'build'
         await executeInProjects(
             stageDescriptor.componentsInBuildOrder,
-            'pnpm', ['run', 'build']
-        );
+            'pnpm', ['run', command]
+        )
     }
 
-    process.chdir('..');
+    process.chdir('..')
 }
