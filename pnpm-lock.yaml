@@ -199,6 +199,9 @@ devDependencies:
   node:
     specifier: ^20.2.0
     version: 20.2.0
+  observable-hooks:
+    specifier: ^4.2.3
+    version: 4.2.3(react-dom@18.2.0)(react@18.2.0)(rxjs@7.8.1)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -10186,6 +10189,18 @@ packages:
       call-bind: 1.0.2
       define-properties: 1.2.0
       es-abstract: 1.21.2
+    dev: true
+
+  /observable-hooks@4.2.3(react-dom@18.2.0)(react@18.2.0)(rxjs@7.8.1):
+    resolution: {integrity: sha512-d6fYTIU+9sg1V+CT0GhgoE/ntjIqcy9DGaYGE6ELGVP4ojaWIEsaLvL/05hLOM+AL7aySN4DCTLvj6dDF9T8XA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+      rxjs: '>=6.0.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      rxjs: 7.8.1
     dev: true
 
   /obuf@1.1.2:
