@@ -73,12 +73,10 @@ export const airportThirdStageBuild = {
     ]
 }
 
-export const airportReactUiBuild = {
+export const airbridgeUiBuild = {
     project: 'AIRbridge',
-    uiType: 'React',
     componentsInBuildOrder: [
-        'UI/react/components',
-        'UI/react/main'
+        'UI/ionic'
     ]
 }
 
@@ -93,7 +91,6 @@ export const airlineBuild = {
 
 export const airlineAngularUiBuild = {
     project: 'AIRline',
-    uiType: 'Angular',
     componentsInBuildOrder: [
         'UIs/angular'
     ]

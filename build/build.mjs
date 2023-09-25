@@ -8,7 +8,7 @@ import {
     airportSecondStageBuild,
     airbridgeSecondStageBuild,
     airportThirdStageBuild,
-    airportReactUiBuild,
+    airbridgeUiBuild,
     airlineBuild,
     airlineAngularUiBuild
 } from './projects.mjs'
@@ -26,7 +26,7 @@ try {
     await buildPeerProjects(airportSecondStageBuild)
     await buildPeerProjects(airbridgeSecondStageBuild)
     await buildPeerProjects(airportThirdStageBuild)
-    await buildPeerProjects(airportReactUiBuild)
+    await buildPeerProjects(airbridgeUiBuild)
     await buildPeerProjects(airlineBuild)
     await buildPeerProjects(airlineAngularUiBuild, false)
 } catch (e) {

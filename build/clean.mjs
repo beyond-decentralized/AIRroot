@@ -9,7 +9,7 @@ import {
     airportSecondStageBuild,
     airbridgeSecondStageBuild,
     airportThirdStageBuild,
-    airportReactUiBuild,
+    airbridgeUiBuild,
     airlineBuild,
     airlineAngularUiBuild
 } from './projects.mjs'
@@ -25,7 +25,7 @@ try {
     await cleanProjects(airportSecondStageBuild)
     await cleanProjects(airbridgeSecondStageBuild)
     await cleanProjects(airportThirdStageBuild)
-    await cleanProjects(airportReactUiBuild)
+    await cleanProjects(airbridgeUiBuild)
     await cleanProjects(airlineBuild)
     await cleanProjects(airlineAngularUiBuild)
 } catch (e) {
