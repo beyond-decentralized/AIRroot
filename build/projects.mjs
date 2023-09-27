@@ -67,9 +67,9 @@ export const airportThirdStageBuild = {
         'generators/runway',
         'databases/sqlite',
         'databases/sqljs',
-        'platforms/server',
         'platforms/web-tower',
         'platforms/web-terminal',
+        'platforms/server'
     ]
 }
 
@@ -85,7 +85,7 @@ export const airlineBuild = {
     componentsInBuildOrder: [
         'apps/topics',
         'apps/conversations',
-        'apps/tasks',
+        'apps/tasks'
     ]
 }
 
