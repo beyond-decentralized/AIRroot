@@ -22,7 +22,7 @@ All AIR projects share common libraries (mostly self defined) and it makes sense
 
 * npm i -g pnpm
 * pnpm add-external-dependencies
-* pnpm ts-patch
+* pnpm install-ts-patch
 * pnpm wire-dependencies
 * pnpm build
 
