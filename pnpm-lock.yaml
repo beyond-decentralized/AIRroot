@@ -52,9 +52,9 @@ devDependencies:
   '@angular/router':
     specifier: ^16.2.0
     version: 16.2.0(@angular/common@16.2.0)(@angular/core@16.2.0)(@angular/platform-browser@16.2.0)(rxjs@7.8.1)
-  '@as-com/pson':
-    specifier: ^3.0.1
-    version: 3.0.1
+  '@beyond-decentralized/pson':
+    specifier: workspace:../PSON
+    version: link:../PSON
   '@capacitor/app':
     specifier: 5.0.6
     version: 5.0.6(@capacitor/core@5.1.1)
@@ -94,9 +94,15 @@ devDependencies:
   '@tsconfig/node16':
     specifier: 1.0.2
     version: 1.0.2
+  '@types/bytebuffer':
+    specifier: 5.0.45
+    version: 5.0.45
   '@types/jasmine':
     specifier: ~4.3.0
     version: 4.3.0
+  '@types/long':
+    specifier: ^4.0.2
+    version: 4.0.2
   '@types/node':
     specifier: ^18.11.15
     version: 18.11.15
@@ -115,6 +121,9 @@ devDependencies:
   browser-sync:
     specifier: ^2.29.3
     version: 2.29.3
+  bytebuffer:
+    specifier: ^5.0.1
+    version: 5.0.1
   cassandra-driver:
     specifier: ^4.6.3
     version: 4.6.3
@@ -169,6 +178,9 @@ devDependencies:
   karma-jasmine-html-reporter:
     specifier: ~2.1.0
     version: 2.1.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0)(karma@6.4.0)
+  long:
+    specifier: ^3.2.0
+    version: 3.2.0
   rimraf:
     specifier: ^5.0.4
     version: 5.0.4
@@ -716,14 +728,6 @@ packages:
       '@angular/platform-browser': 16.2.0(@angular/animations@16.2.0)(@angular/common@16.2.0)(@angular/core@16.2.0)
       rxjs: 7.8.1
       tslib: 2.5.3
-    dev: true
-
-  /@as-com/pson@3.0.1:
-    resolution: {integrity: sha512-tIx6kBa3guFBMrWhQ+hqPbpDQFptlL2TdFIDqwTSN0w9MYy+Aaw48vIMSiKYIIM7z3EwuCen1U/htO7k2oS9DQ==}
-    engines: {node: '>=6'}
-    dependencies:
-      bytebuffer: 5.0.1
-      long: 3.2.0
     dev: true
 
   /@assemblyscript/loader@0.10.1:
@@ -3203,6 +3207,13 @@ packages:
       '@types/node': 18.11.15
     dev: true
 
+  /@types/bytebuffer@5.0.45:
+    resolution: {integrity: sha512-eqC6fZ9ZC3R37gKE5vH3S+SnMEVvGoaopn8sNwP2Xk1FDt6mn8hYxqFPgBS389SDBfxb6+j5Ss6VvffZI6YW1A==}
+    dependencies:
+      '@types/long': 3.0.32
+      '@types/node': 18.11.15
+    dev: true
+
   /@types/connect-history-api-fallback@1.5.0:
     resolution: {integrity: sha512-4x5FkPpLipqwthjPsF7ZRbOv3uoLUFkTA9G9v583qi4pACvq0uTELrB8OLUzPWUI4IJIyvM85vzkV1nyiI2Lig==}
     dependencies:
@@ -3295,6 +3306,10 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/long@3.0.32:
+    resolution: {integrity: sha512-ZXyOOm83p7X8p3s0IYM3VeueNmHpkk/yMlP8CLeOnEcu6hIwPH7YjZBvhQkR0ZFS2DqZAxKtJ/M5fcuv3OU5BA==}
     dev: true
 
   /@types/long@4.0.2:
