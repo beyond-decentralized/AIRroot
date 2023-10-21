@@ -16,7 +16,8 @@ export const airwayBuild = {
     project: 'AIRway',
     componentsInBuildOrder: [
         'types',
-        'client'
+        'client',
+        'in-memory-server'
     ]
 }
 
