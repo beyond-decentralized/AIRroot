@@ -46,6 +46,9 @@ pnpm clean-build schemas/holding-pattern
 ## Troubleshooting
 
 If you get unexpected missing dependencies (event though they are present in node_modules), run:
+
   unwire-dependencies
+
   wire-dependencies
+  
   clean-build
