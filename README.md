@@ -24,7 +24,7 @@ All AIR projects share common libraries (mostly self-defined) and it makes sense
 * pnpm add-external-dependencies
 * pnpm install-ts-patch
 * pnpm wire-dependencies
-* pnpm build
+* pnpm clean-build
 
 
 
@@ -32,6 +32,18 @@ Now you should only have to re-run add-external-dependencies if external depende
 of Typescript.
 
 Likewise, you only have to run wire-dependencies if any of the dependencies (internal or external) were changed.
+
+## Running from a given library on
+
+If you need to run the build/clean-build starting from a particular library (and going down the dependency chain) run:
+
+pnpm clean-build $RELATIVE_PATH_TO_LIBRARY
+
+Ex:  to run the build on ./AIRroot/AIRport/schemas/holding-pattern and all of the libraries that depend on it run
+
+pnpm clean-build schemas/holding-pattern
+
+## Troubleshooting
 
 If you get unexpected missing dependencies (event though they are present in node_modules), run:
   unwire-dependencies

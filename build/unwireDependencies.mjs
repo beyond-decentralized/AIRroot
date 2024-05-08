@@ -45,6 +45,8 @@ async function unwireProjectDependencies(
 
     await executeInProjects(
         stageDescriptor.componentsInBuildOrder,
+        true,
+        null,
         removeCommand, removeCommandOptions
     );
 

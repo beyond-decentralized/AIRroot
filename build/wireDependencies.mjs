@@ -32,6 +32,8 @@ async function addDependencies(
 
     await executeInProjects(
         stageDescriptor.componentsInBuildOrder,
+        true,
+        null,
         'pnpm', ['i']
     )
 

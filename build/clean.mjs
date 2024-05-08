@@ -58,23 +58,39 @@ async function cleanProjects(
 
     await executeInProjects(
         componentsInBuildOrder,
+        true,
+        null,
         removeCommand, [...removeCommandOptions, 'dist']
     )
 
     if (hasRunway) {
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/api'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/dao'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/ddl'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/execute'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/interface'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeCommand, [...removeCommandOptions, 'dist/esm/resolve'])
         await executeInProjects(['generators/runway'],
+            true,
+            null,
             removeFilesCommand, [
             'dist/esm/FileProcessor.d.ts',
             'dist/esm/FileProcessor.d.ts.map',

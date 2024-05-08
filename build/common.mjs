@@ -3,10 +3,19 @@ import { spawn } from 'child_process';
 
 export async function executeInProjects(
     projectsDescriptorsInBuildOrder,
+    buildStarted,
+    startingWithProjectDir,
     command,
     parameters
 ) {
     for (const projectDescriptor of projectsDescriptorsInBuildOrder) {
+        if (!buildStarted) {
+            if (projectDescriptor === startingWithProjectDir) {
+                buildStarted = true
+            } else {
+                continue
+            }
+        }
         // let isApp = false;
         let projectDirectory
         // if (projectDescriptor instanceof Object) {
@@ -29,7 +38,9 @@ export async function executeInProjects(
         await execute(command, parameters, projectDirectory)
 
         process.chdir(navigateBackPath)
-    };
+    }
+
+    return buildStarted
 }
 
 export async function execute(

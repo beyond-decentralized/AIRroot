@@ -95,5 +95,6 @@ export const airlineAngularUiBuild = {
     project: 'AIRline',
     componentsInBuildOrder: [
         'UIs/angular'
-    ]
+    ],
+    build: false
 }
