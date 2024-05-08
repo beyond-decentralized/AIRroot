@@ -17,6 +17,7 @@ export const airwayBuild = {
     componentsInBuildOrder: [
         'types',
         'client',
+        'processor-common',
         'in-memory-server'
     ]
 }
