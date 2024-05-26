@@ -27,6 +27,8 @@ if (process.argv.length > 2) {
     }
     if (process.argv.length === 4) {
         startingWithProjectDir = process.argv[3]
+    } else if(!clean && process.argv.length === 3) {
+        startingWithProjectDir = process.argv[2]
     }
 }
 
